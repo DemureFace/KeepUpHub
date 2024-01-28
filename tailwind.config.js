@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryGradient: "var(--primary-gradient)",
+      },
+    },
   },
   plugins: [],
 };
