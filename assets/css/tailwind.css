@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-dark;
+    @apply overflow-x-hidden bg-dark;
   }
 
   .container {

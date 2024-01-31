@@ -32,13 +32,13 @@ const tickerText = [
       <img
         src="/images/wellcom/astronaut.png"
         alt="astronaut"
-        class="animate-levitation pointer-events-none absolute -top-8 right-8 hidden h-[494px] w-[344px] md:block lg:-top-32 lg:h-[650px] lg:w-[452px] xl:-top-28 xl:right-36 2xl:right-80"
+        class="pointer-events-none absolute -top-8 right-8 hidden h-[494px] w-[344px] animate-levitation md:block lg:-top-32 lg:h-[650px] lg:w-[452px] xl:-top-28 xl:right-36 2xl:right-80"
       />
     </div>
 
     <BaseTicker
       :text="tickerText"
-      class="absolute -bottom-6 -left-2 w-[calc(100%+8px)] -rotate-2"
+      class="absolute -bottom-12 -left-2 -z-20 w-[110%] -rotate-2"
     />
   </section>
 </template>

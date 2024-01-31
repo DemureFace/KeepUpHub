@@ -3,5 +3,5 @@ import WellcomSection from "~/components/home/WellcomSection.vue";
 </script>
 
 <template>
-  <WellcomSection />
+  <WellcomSection class="mb-[272px]" />
 </template>

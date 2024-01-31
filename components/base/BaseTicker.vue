@@ -7,7 +7,7 @@ const props = defineProps({
 
   repeatText: {
     type: Number,
-    default: 5,
+    default: 10,
   },
 
   duration: {
@@ -19,11 +19,15 @@ const props = defineProps({
 const textList = computed(() => {
   const textList = [];
 
+  let currentIndex = 0;
+
   for (let i = 0; i < props.repeatText; i++) {
-    if (i < props.text.lenght) {
-      textList.push(props.text[i]);
-      console.log(props.text[i]);
+    if (currentIndex >= props.text.length) {
+      currentIndex = 0;
     }
+
+    textList.push(props.text[currentIndex]);
+    currentIndex++;
   }
 
   return textList;
@@ -32,7 +36,7 @@ const textList = computed(() => {
 
 <template>
   <div
-    class="ticker bg-ticker text-sm2 text-primary-200 border-primary-100 flex h-7 select-none gap-6 overflow-hidden border font-onest font-normal uppercase"
+    class="ticker bg-ticker text-sm2 flex h-7 select-none gap-6 overflow-hidden border border-primary-100 font-onest font-normal uppercase text-primary-200"
     :style="`--duration: ${duration}`"
   >
     <div
@@ -49,7 +53,7 @@ const textList = computed(() => {
           {{ textItem }}
         </p>
 
-        <div class="bg-stars mx-auto h-5 w-5 bg-cover xl:h-6 xl:w-6" />
+        <div class="mx-auto h-1 w-1 rounded-full bg-primary-200" />
       </template>
     </div>
   </div>
