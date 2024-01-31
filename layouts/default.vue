@@ -1,19 +1,13 @@
 <script setup>
-import baseDropDownSelect from "~/base/baseDropDownSelect.vue";
-
-const dropdownOptions = [
-  { value: "option1", label: "UA" },
-  { value: "option2", label: "EN" },
-];
+import TheHeader from "~/components/layout/TheHeader.vue";
 </script>
 
 <template>
-  <header>
-    <h1 class="font-onest text-2xl font-medium">Header</h1>
-    <baseDropDownSelect :options="dropdownOptions" />
-  </header>
-  <main>
+  <TheHeader />
+
+  <main class="pt-14 md:pt-20">
     <slot />
   </main>
+
   <footer>Footer</footer>
 </template>
