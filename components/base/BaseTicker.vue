@@ -36,7 +36,7 @@ const textList = computed(() => {
 
 <template>
   <div
-    class="ticker bg-ticker text-sm2 flex h-7 select-none gap-6 overflow-hidden border border-primary-100 font-onest font-normal uppercase text-primary-200"
+    class="ticker bg-ticker text-sm2 flex h-10 select-none gap-6 overflow-hidden border border-primary-100 font-onest font-normal uppercase text-primary-200"
     :style="`--duration: ${duration}`"
   >
     <div
