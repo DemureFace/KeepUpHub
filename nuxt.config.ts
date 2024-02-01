@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   i18n: {
-    lazy: true,
+    lazy: false,
     langDir: "locales/",
     strategy: "prefix",
     defaultLocale: "uk",
