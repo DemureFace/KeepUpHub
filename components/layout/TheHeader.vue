@@ -1,5 +1,18 @@
 <script setup>
-const selectedValue = ref("");
+const { locale } = useI18n();
+
+const localeRoute = useLocaleRoute();
+
+watch(
+  () => locale.value,
+  (newL, oldL) => {
+    const route = localeRoute();
+
+    if (route) {
+      return navigateTo(route.fullPath);
+    }
+  },
+);
 </script>
 
 <template>
@@ -15,10 +28,11 @@ const selectedValue = ref("");
     </div>
 
     <BaseSelect
+      v-model="locale"
       :options="[
         {
           label: 'EN',
-          value: 'EN',
+          value: 'en',
           image: {
             src: '/images/svg/gb.svg',
             alt: 'GB',
@@ -26,14 +40,13 @@ const selectedValue = ref("");
         },
         {
           label: 'UA',
-          value: 'UA',
+          value: 'uk',
           image: {
             src: '/images/svg/ua.svg',
             alt: 'UA',
           },
         },
       ]"
-      v-model="selectedValue"
     />
   </header>
 </template>

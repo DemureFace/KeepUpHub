@@ -53,7 +53,7 @@ onMounted(() => {
 <template>
   <div
     ref="selectRef"
-    class="relative border bg-dark px-4 py-3.5"
+    class="relative z-10 border bg-dark px-4 py-3.5"
     :class="
       isOpen
         ? 'rounded-t-3xl border-white/50 border-b-transparent'

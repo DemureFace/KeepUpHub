@@ -13,7 +13,8 @@ const tickerText = [
     <div class="container relative">
       <div class="md:w-[363px] lg:w-[434px] xl:w-full">
         <h1 class="mb-1 text-5xl font-bold uppercase text-white">
-          Вітаємо в <span class="text-primary-100">keepuphub</span>
+          {{ $t("welcome_section.welcome_to") }}
+          <span class="text-primary-100">keepuphub</span>
         </h1>
 
         <p class="mb-9 text-base font-bold text-white">
@@ -32,7 +33,7 @@ const tickerText = [
       <img
         src="/images/wellcom/astronaut.png"
         alt="astronaut"
-        class="pointer-events-none absolute -top-8 right-8 hidden h-[494px] w-[344px] animate-levitation md:block lg:-top-32 lg:h-[650px] lg:w-[452px] xl:-top-28 xl:right-36 2xl:right-80"
+        class="pointer-events-none absolute -top-8 right-8 hidden h-[494px] w-[344px] animate-levitation md:block lg:-top-32 lg:h-[650px] lg:w-[452px] xl:-top-28 xl:right-36 2xl:right-[108px]"
       />
     </div>
 
