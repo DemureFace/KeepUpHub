@@ -27,7 +27,7 @@ const tickerText = [
           комунікацію. Ми робимо кожен дзвінок важливим для вашого успіху!
         </p>
 
-        <BaseButton>Замовити послуги</BaseButton>
+        <BaseButton widthClass="w-full md:w-fit">Замовити послуги</BaseButton>
       </div>
 
       <img
@@ -39,7 +39,7 @@ const tickerText = [
 
     <BaseTicker
       :text="tickerText"
-      class="absolute -bottom-12 -left-2 -z-20 w-[110%] -rotate-2"
+      class="absolute -bottom-[100px] -left-2 -z-20 w-[110%] -rotate-2"
     />
   </section>
 </template>

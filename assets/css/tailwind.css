@@ -4,11 +4,19 @@
 
 @layer base {
   body {
-    @apply w-screen overflow-x-hidden bg-dark;
+    @apply bg-dark;
+  }
+
+  main {
+    @apply flex flex-col;
   }
 
   .container {
     @apply mx-auto w-full !max-w-full px-4 md:px-8 lg:px-[38px] xl:!max-w-[1136px] xl:px-0;
+  }
+
+  #__nuxt {
+    @apply relative max-w-[100vw] overflow-x-hidden;
   }
 }
 
@@ -20,5 +28,9 @@
 
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1px white;
   }
 }
