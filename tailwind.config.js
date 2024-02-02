@@ -9,6 +9,7 @@ module.exports = {
           200: "#FFE600",
         },
         dark: "#141414",
+        gray: "#D9D9D9",
       },
 
       screens: {
@@ -21,6 +22,10 @@ module.exports = {
 
       fontFamily: {
         onest: ["Onest", "sans-serif"],
+      },
+
+      fontSize: {
+        "8xl": ["76px", "91px"],
       },
 
       backgroundImage: {
