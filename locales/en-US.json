@@ -27,5 +27,21 @@
     "minutes-of-communication": "minutes of communication",
     "requests": "requests",
     "deposits":"deposits"
+  },
+
+  "feedback_section": {
+    "title": "What our clients say",
+
+    "feedbacks": {
+      "first": {
+        "text": "The callbacks and traffic checks you conducted exceeded our expectations. The retention team demonstrates a great level of attention to detail and the ability to engage and retain the audience. I would recommend their services to anyone looking for a highly effective retention partner."
+      },
+      "second": {
+        "text": "With KeepUpHub, we opted for a full-service solution, and the result has been a great pleasure. Their retention and support teams have exceeded all our expectations. From professionalism to speed of execution, KeepUpHub helps us maintain a high standard of service."
+      },
+      "third": {
+        "text": "KeepUpHub helps our business maintain a high standard of service thanks to their professional support team. Their speed of response and in-depth approach to each client make them an important partner for successful interaction with the audience."
+      }
+    }
   }
 }

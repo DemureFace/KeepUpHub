@@ -8,8 +8,11 @@ module.exports = {
           100: "#C4F23E",
           200: "#FFE600",
         },
+        gray: {
+          100: "#D9D9D9",
+          200: "#242424",
+        },
         dark: "#141414",
-        gray: "#D9D9D9",
       },
 
       screens: {

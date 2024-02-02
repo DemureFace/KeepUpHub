@@ -4,6 +4,7 @@ import ServicesSection from "~/components/home/ServicesSection.vue";
 import ServicesInfoSection from "~/components/home/ServicesInfoSection.vue";
 import ChoiceSection from "~/components/home/ChoiceSection.vue";
 import ResultsSection from "~/components/home/ResultsSection.vue";
+import FeedbackSection from "~/components/home/FeedbackSection.vue";
 </script>
 
 <template>
@@ -15,5 +16,7 @@ import ResultsSection from "~/components/home/ResultsSection.vue";
 
   <ChoiceSection class="mb-[100px] md:mb-36 xl:mb-44" />
 
-  <ResultsSection />
+  <ResultsSection class="mb-[100px] md:mb-36 xl:mb-44" />
+
+  <FeedbackSection />
 </template>
