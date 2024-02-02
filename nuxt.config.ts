@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   i18n: {
     lazy: false,
     langDir: "locales/",
-    strategy: "prefix",
+    strategy: "no_prefix",
     defaultLocale: "uk",
     locales: [
       { code: "uk", iso: "uk-UA", file: "uk-UA.json" },

@@ -26,6 +26,9 @@ module.exports = {
       backgroundImage: {
         "primary-gradient":
           "linear-gradient(157deg, #FFE600 25.84%, #C4F23E 65.32%)",
+        "experience-card": "url('/images/choice/experience-bg.png')",
+        "solutions-card": "url('/images/choice/solutions.png')",
+        "customer-focus-card": "url('/images/choice/customer-focus.png')",
       },
 
       keyframes: {
