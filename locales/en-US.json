@@ -1,5 +1,24 @@
 {
   "welcome_section": {
     "welcome_to": "welcome to"
+  },
+
+  "choice_section": {
+    "title": "WHY ARE WE CHOSEN?",
+
+    "experience": {
+      "title": "Experience",
+      "description": "We have more than 8 years of successful experience in the iGaming industry, building well-known projects and understanding its peculiarities."
+    },
+
+    "solutions": {
+      "title": "Effective solutions",
+      "description": "We provide advanced communication and support strategies to help your business grow to its full potential."
+    },
+
+    "customer-focus": {
+      "title": "Customer focus",
+      "description": "Our team is focused on your client, creating a personalised approach and ensuring satisfaction."
+    }
   }
 }
