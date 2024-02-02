@@ -14,8 +14,6 @@ const resultList = [
   },
 ];
 
-const resultRef = ref(null);
-
 let targetValue = 11870000;
 let duration = 5000;
 
@@ -52,11 +50,13 @@ function easeInOutQuad(t, b, c, d) {
 onMounted(async () => {
   await nextTick();
 
-  let observer = new IntersectionObserver(
+  const animatedElement = document.getElementById("result-2");
+
+  const observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          animateValue(0, targetValue, duration, resultRef.value[0]);
+          animateValue(0, targetValue, duration, animatedElement);
 
           observer.unobserve(entry.target);
         }
@@ -65,7 +65,7 @@ onMounted(async () => {
     { threshold: 1, rootMargin: "0px 0px -50px 0px" },
   );
 
-  observer.observe(resultRef.value[0]);
+  observer.observe(animatedElement);
 });
 </script>
 
@@ -97,7 +97,7 @@ onMounted(async () => {
             class="flex flex-col"
           >
             <h3
-              :ref="index === resultList.length - 1 ? 'resultRef' : null"
+              :id="`result-${index}`"
               v-text="result.number"
               class="font-onest text-[40px] font-bold leading-[48px]"
               :class="
