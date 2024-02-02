@@ -16,11 +16,10 @@ const resultList = [
 
 const resultRef = ref(null);
 
-let counterValue = { value: 0 };
 let targetValue = 11870000;
 let duration = 5000;
 
-function animateValue(obj, start, end, duration) {
+function animateValue(start, end, duration, element) {
   let startTime = null;
 
   function animation(currentTime) {
@@ -31,13 +30,12 @@ function animateValue(obj, start, end, duration) {
       easeInOutQuad(timeElapsed, start, end - start, duration),
     );
 
-    obj.value = nextValue;
-    resultRef.value[0].textContent = `${nextValue.toLocaleString()}$`;
+    element.textContent = `${nextValue.toLocaleString()}$`;
 
     if (timeElapsed < duration) {
       requestAnimationFrame(animation);
     } else {
-      resultRef.value[0].textContent = `${end.toLocaleString()}$`;
+      element.textContent = `${end.toLocaleString()}$`;
     }
   }
 
@@ -51,12 +49,14 @@ function easeInOutQuad(t, b, c, d) {
   return (-c / 2) * (t * (t - 2) - 1) + b;
 }
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick();
+
   let observer = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          animateValue(counterValue, 0, targetValue, duration);
+          animateValue(0, targetValue, duration, resultRef.value[0]);
 
           observer.unobserve(entry.target);
         }
@@ -78,10 +78,10 @@ onMounted(() => {
       />
 
       <div
-        class="border-gray relative flex rounded-2xl border px-4 py-10 md:px-7 lg:px-16 xl:pl-[168px] xl:pr-[75px]"
+        class="relative flex rounded-2xl border border-gray px-4 py-10 md:px-7 lg:px-16 xl:pl-[168px] xl:pr-[75px]"
       >
         <div
-          class="border-b-gray absolute -top-10 left-1/2 flex h-0 w-0 -translate-x-1/2 justify-center border-b-[40px] border-l-[40px] border-r-[40px] border-l-transparent border-r-transparent md:left-24 md:translate-x-0 xl:left-52"
+          class="absolute -top-10 left-1/2 flex h-0 w-0 -translate-x-1/2 justify-center border-b-[40px] border-l-[40px] border-r-[40px] border-b-gray border-l-transparent border-r-transparent md:left-24 md:translate-x-0 xl:left-52"
         >
           <div
             class="absolute mt-0.5 border-b-[40px] border-l-[40px] border-r-[40px] border-b-dark border-l-transparent border-r-transparent"
@@ -99,11 +99,12 @@ onMounted(() => {
             <h3
               :ref="index === resultList.length - 1 ? 'resultRef' : null"
               v-text="result.number"
-              class="text-center font-onest text-[40px] font-bold leading-[48px] text-white"
-              :class="{
-                'w-[250px] bg-gradient-to-r from-primary-200 to-primary-100 bg-clip-text text-right text-transparent':
-                  index === resultList.length - 1,
-              }"
+              class="font-onest text-[40px] font-bold leading-[48px]"
+              :class="
+                index === resultList.length - 1
+                  ? 'w-[250px] bg-gradient-to-r from-primary-200 to-primary-100 bg-clip-text text-right text-transparent'
+                  : 'text-center text-white '
+              "
             />
 
             <p
