@@ -20,5 +20,12 @@
       "title": "Customer focus",
       "description": "Our team is focused on your client, creating a personalised approach and ensuring satisfaction."
     }
+  },
+
+  "results_section": {
+    "title": "results in 2023",
+    "minutes-of-communication": "minutes of communication",
+    "requests": "requests",
+    "deposits":"deposits"
   }
 }
