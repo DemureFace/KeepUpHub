@@ -15,7 +15,7 @@ const resultList = [
 ];
 
 let targetValue = 11870000;
-let duration = 5000;
+let duration = 3000;
 
 function animateValue(start, end, duration, element) {
   let startTime = null;
@@ -78,10 +78,10 @@ onMounted(async () => {
       />
 
       <div
-        class="border-gray-100 relative flex rounded-2xl border px-4 py-10 md:px-7 lg:px-16 xl:pl-[168px] xl:pr-[75px]"
+        class="relative flex rounded-2xl border border-gray-100 px-4 py-10 md:px-7 lg:px-16 xl:pl-[168px] xl:pr-[75px]"
       >
         <div
-          class="border-b-gray-100 absolute -top-10 left-1/2 flex h-0 w-0 -translate-x-1/2 justify-center border-b-[40px] border-l-[40px] border-r-[40px] border-l-transparent border-r-transparent md:left-24 md:translate-x-0 xl:left-52"
+          class="absolute -top-10 left-1/2 flex h-0 w-0 -translate-x-1/2 justify-center border-b-[40px] border-l-[40px] border-r-[40px] border-b-gray-100 border-l-transparent border-r-transparent md:left-24 md:translate-x-0 xl:left-52"
         >
           <div
             class="absolute mt-0.5 border-b-[40px] border-l-[40px] border-r-[40px] border-b-dark border-l-transparent border-r-transparent"

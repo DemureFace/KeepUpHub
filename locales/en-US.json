@@ -45,6 +45,17 @@
     }
   },
 
+  "calculator_section": {
+    "title": "cost calculator",
+
+    "description": {
+      "help": "You can use the calculator to calculate the approximate cost of services. For an accurate calculation of the project cost, ",
+      "apply": "please contact us"
+    },
+
+    "type": "Choose a service type:"
+  },
+
   "questions_section": {
     "title": "The most popular questions",
 
