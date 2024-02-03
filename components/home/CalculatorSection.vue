@@ -11,6 +11,16 @@ const serviceList = [
   },
   { id: "retention", label: "Retention", value: "retention" },
 ];
+
+const rangeValues = [
+  { label: "до 500", value: 1 },
+  { label: "501 - 1 000", value: 2 },
+  { label: "1001 - 5 000", value: 3 },
+  { label: "5 001 - 10 000", value: 4 },
+  { label: "10 001+", value: 5 },
+];
+
+const rangeValue = ref(1);
 </script>
 
 <template>
@@ -35,7 +45,7 @@ const serviceList = [
     </div>
 
     <div
-      class="hide-scrollbar mx-auto flex w-full gap-3 overflow-x-scroll px-0 md:px-8 lg:px-[38px] xl:max-w-[1136px] xl:px-0"
+      class="hide-scrollbar mx-auto mb-8 flex w-full gap-3 overflow-x-scroll px-0 md:px-8 lg:px-[38px] xl:max-w-[1136px] xl:px-0"
     >
       <div class="mr-1 h-1 w-1 md:hidden" />
 
@@ -47,6 +57,15 @@ const serviceList = [
       />
 
       <div class="ml-1 h-1 w-1 md:hidden" />
+    </div>
+
+    <div class="container">
+      <BaseInputRange
+        :selected-value="rangeValue"
+        :range-values="rangeValues"
+        label="Об’єм клієнтської бази на місяць:"
+        @update-selected-value="rangeValue = $event"
+      />
     </div>
   </section>
 </template>
