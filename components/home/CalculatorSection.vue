@@ -61,10 +61,10 @@ const rangeValue = ref(1);
 
     <div class="container">
       <BaseInputRange
-        :selected-value="rangeValue"
+        v-model="rangeValue"
         :range-values="rangeValues"
         label="Об’єм клієнтської бази на місяць:"
-        @update-selected-value="rangeValue = $event"
+        class="mb-20"
       />
     </div>
   </section>
