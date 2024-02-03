@@ -2,27 +2,23 @@
 const serviceCards = [
   {
     img: "/images/svg/headephones.svg",
-    title: "Contact Center",
-    description:
-      "Профейсійна онлайн підтримка, ведення чатів та онлайн спілкування з клієнтами",
+    title: "services_section.contact_center.title",
+    description: "services_section.contact_center.description",
   },
   {
-    img: "/images/svg/headephones.svg",
-    title: "Contact Center",
-    description:
-      "Профейсійна онлайн підтримка, ведення чатів та онлайн спілкування з клієнтами",
+    img: "/images/svg/mail-icon.svg",
+    title: "services_section.support.title",
+    description: "services_section.support.description",
   },
   {
-    img: "/images/svg/headephones.svg",
-    title: "Contact Center",
-    description:
-      "Профейсійна онлайн підтримка, ведення чатів та онлайн спілкування з клієнтами",
+    img: "/images/svg/coin-icon.svg",
+    title: "services_section.payment_and_anti-fraud.title",
+    description: "services_section.payment_and_anti-fraud.description",
   },
   {
-    img: "/images/svg/headephones.svg",
-    title: "Contact Center",
-    description:
-      "Профейсійна онлайн підтримка, ведення чатів та онлайн спілкування з клієнтами",
+    img: "/images/svg/retention-icon.svg",
+    title: "services_section.retention.title",
+    description: "services_section.retention.description",
   },
 ];
 </script>
@@ -30,7 +26,9 @@ const serviceCards = [
 <template>
   <section class="w-full overflow-hidden">
     <div class="container mb-14">
-      <h2 class="text-2xl font-bold text-white md:text-4xl">Наші послуги</h2>
+      <h2 class="text-2xl font-bold text-white md:text-4xl">
+        {{ $t("services_section.title") }}
+      </h2>
     </div>
 
     <ul
@@ -43,15 +41,15 @@ const serviceCards = [
         :key="i"
         class="relative box-content flex cursor-pointer flex-col items-center gap-6 px-8 py-12 after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:rounded-2xl after:border after:border-primary-100 after:transition-all after:duration-300 hover:after:border-[5px]"
       >
-        <img :src="card.img" alt="" class="" />
+        <img :src="card.img" alt="" class="h-20 w-20" />
 
         <h3
-          v-text="card.title"
+          v-text="$t(card.title)"
           class="font-onest text-2xl font-bold text-white"
         />
 
         <p
-          v-text="card.description"
+          v-text="$t(card.description)"
           class="text-center font-onest text-sm font-light text-white"
         />
 

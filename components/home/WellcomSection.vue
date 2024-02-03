@@ -14,20 +14,25 @@ const tickerText = [
       <div class="md:w-[363px] lg:w-[434px] xl:w-full">
         <h1 class="mb-1 text-5xl font-bold uppercase text-white">
           {{ $t("welcome_section.welcome_to") }}
-          <span class="text-primary-100">keepuphub</span>
+          <span class="text-primary-100">{{
+            $t("welcome_section.keepuphub")
+          }}</span>
         </h1>
 
         <p class="mb-9 text-base font-bold text-white">
-          Впевненість у кожному слові, ефективність у кожному вчинку
+          {{ $t("welcome_section.sub_title") }}
         </p>
 
         <p class="mb-12 w-full text-sm font-light text-white xl:w-[463px]">
-          KeepUpHub – ваш <span class="text-primary-100">партнер</span> у
-          створенні міцних зв'язків через ​високоефективну телефонну та онлайн
-          комунікацію. Ми робимо кожен дзвінок важливим для вашого успіху!
+          <span class="text-primary-100">{{
+            $t("welcome_section.partner")
+          }}</span
+          >{{ $t("welcome_section.description") }}
         </p>
 
-        <BaseButton widthClass="w-full md:w-fit">Замовити послуги</BaseButton>
+        <BaseButton widthClass="w-full md:w-fit">{{
+          $t("welcome_section.button_text")
+        }}</BaseButton>
       </div>
 
       <img
