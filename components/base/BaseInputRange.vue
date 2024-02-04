@@ -5,9 +5,9 @@ const props = defineProps({
     required: true,
   },
 
-  label: {
+  title: {
     type: String,
-    default: "",
+    required: true,
   },
 
   rangeValues: {
@@ -51,10 +51,10 @@ const progressWidthClass = computed(() => {
 <template>
   <div class="relative flex w-full flex-col">
     <h4 class="mb-4 text-lg font-bold text-white md:text-2xl">
-      {{ props.label }}
+      {{ $t(props.title) }}
     </h4>
 
-    <div class="mb-6 flex items-center justify-between md:max-w-[446px]">
+    <div class="mb-6 flex items-center justify-between">
       <span
         v-for="value in props.rangeValues"
         :key="value.label"
@@ -65,11 +65,11 @@ const progressWidthClass = computed(() => {
             : 'text-[8px] leading-4 first:text-xs last:text-xs md:text-xs'
         "
       >
-        {{ value.label }}
+        {{ $t(value.label) }}
       </span>
     </div>
 
-    <div class="relative flex md:max-w-[446px]">
+    <div class="relative flex">
       <input
         v-model="model"
         type="range"

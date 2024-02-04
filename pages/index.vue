@@ -5,7 +5,7 @@ import ServicesInfoSection from "~/components/home/ServicesInfoSection.vue";
 import ChoiceSection from "~/components/home/ChoiceSection.vue";
 import ResultsSection from "~/components/home/ResultsSection.vue";
 import FeedbackSection from "~/components/home/FeedbackSection.vue";
-import CalculatorSection from "~/components/home/CalculatorSection.vue";
+import CalculatorSection from "~/components/home/calculator/CalculatorSection.vue";
 import QuestionsSection from "~/components/home/QuestionsSection.vue";
 </script>
 
