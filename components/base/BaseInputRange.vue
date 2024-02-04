@@ -50,9 +50,11 @@ const progressWidthClass = computed(() => {
 
 <template>
   <div class="relative flex w-full flex-col">
-    <h4 class="mb-14 text-white">{{ props.label }}</h4>
+    <h4 class="mb-4 text-lg font-bold text-white md:text-2xl">
+      {{ props.label }}
+    </h4>
 
-    <div class="mb-6 flex items-center justify-between">
+    <div class="mb-6 flex items-center justify-between md:max-w-[446px]">
       <span
         v-for="value in props.rangeValues"
         :key="value.label"
@@ -67,7 +69,7 @@ const progressWidthClass = computed(() => {
       </span>
     </div>
 
-    <div class="relative flex">
+    <div class="relative flex md:max-w-[446px]">
       <input
         v-model="model"
         type="range"
