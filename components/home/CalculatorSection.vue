@@ -13,14 +13,21 @@ const serviceList = [
 ];
 
 const rangeValues = [
-  { label: "до 500", value: 1 },
-  { label: "501 - 1 000", value: 2 },
-  { label: "1001 - 5 000", value: 3 },
-  { label: "5 001 - 10 000", value: 4 },
-  { label: "10 001+", value: 5 },
+  { label: "до 500", value: 1, price: 1000 },
+  { label: "501 - 1 000", value: 2, price: 2500 },
+  { label: "1001 - 5 000", value: 3, price: 3700 },
+  { label: "5 001 - 10 000", value: 4, price: 5000 },
+  { label: "10 001+", value: 5, price: 7000 },
 ];
 
 const rangeValue = ref(1);
+const customerPrice = computed(() => {
+  const rangeValuePrice = rangeValues.find(
+    (value) => value.value === rangeValue.value,
+  );
+
+  return rangeValuePrice.price;
+});
 </script>
 
 <template>
@@ -59,13 +66,27 @@ const rangeValue = ref(1);
       <div class="ml-1 h-1 w-1 md:hidden" />
     </div>
 
-    <div class="container">
+    <div
+      class="container flex flex-col md:flex-row md:items-center md:justify-between md:gap-6"
+    >
       <BaseInputRange
         v-model="rangeValue"
         :range-values="rangeValues"
         label="Об’єм клієнтської бази на місяць:"
-        class="mb-20"
+        class="mb-8 w-full md:mb-0"
       />
+
+      <div
+        class="flex max-w-[168px] items-center justify-end gap-2.5 md:max-w-[196px] md:flex-col md:items-end md:gap-0"
+      >
+        <p class="text-xs font-light text-white md:text-right md:text-sm">
+          Орієнтовна вартість в USD: (Contact Center & Retention)
+        </p>
+
+        <span class="text-2xl font-bold text-white">
+          {{ `${customerPrice}$` }}
+        </span>
+      </div>
     </div>
   </section>
 </template>
