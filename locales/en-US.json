@@ -53,7 +53,22 @@
       "apply": "please contact us"
     },
 
-    "type": "Choose a service type:"
+    "type": "Choose a service type:",
+
+    "ranges": {
+      "cost": "Estimated cost in USD:",
+
+      "customer-base": {
+        "title": "Volume of client base per month:",
+        "options": {
+          "first": "up to 500",
+          "second": "501 - 1000",
+          "third": "1001 - 5000",
+          "fourth": "5001 - 10000",
+          "fifth": "10 001+"
+        }
+      }
+    }
   },
 
   "questions_section": {
