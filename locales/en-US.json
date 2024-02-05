@@ -26,7 +26,7 @@
     "title": "results in 2023",
     "minutes-of-communication": "minutes of communication",
     "requests": "requests",
-    "deposits":"deposits"
+    "deposits": "deposits"
   },
 
   "feedback_section": {
@@ -60,6 +60,17 @@
 
       "customer-base": {
         "title": "Volume of client base per month:",
+        "options": {
+          "first": "up to 500",
+          "second": "501 - 1000",
+          "third": "1001 - 5000",
+          "fourth": "5001 - 10000",
+          "fifth": "10 001+"
+        }
+      },
+
+      "support": {
+        "title": "Number of requests per month:",
         "options": {
           "first": "up to 500",
           "second": "501 - 1000",

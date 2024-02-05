@@ -3,7 +3,8 @@ import CalculatorRange from "./CalculatorRange.vue";
 
 import { useCalculator } from "./useCalculator";
 
-const { serviceList, checkedServices, rangesList } = useCalculator();
+const { serviceList, checkedServices, rangesList, monthValue, monthRangeList } =
+  useCalculator();
 </script>
 
 <template>
@@ -42,15 +43,23 @@ const { serviceList, checkedServices, rangesList } = useCalculator();
       <div class="ml-1 h-1 w-1 md:hidden" />
     </div>
 
-    <div class="flex flex-col">
+    <div class="container flex flex-col gap-12 md:gap-10">
       <template v-for="item in rangesList" :key="item.id">
         <CalculatorRange
           v-if="checkedServices.includes(item.id)"
           v-model="item.modelValue"
           v-bind="item"
-          class="mb-8 w-full md:mb-0 md:max-w-[446px]"
+          class="mb-8 w-full md:mb-0"
         />
       </template>
+
+      <BaseInputRange
+        v-model="monthValue"
+        :range-values="monthRangeList"
+        title="Термін сервісу:"
+        show-help
+        class="mb-8 w-full md:mb-0"
+      />
     </div>
   </section>
 </template>

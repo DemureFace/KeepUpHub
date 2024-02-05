@@ -14,6 +14,11 @@ const props = defineProps({
     type: Array,
     default: () => [],
   },
+
+  showHelp: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const emit = defineEmits(["update:model-value"]);
@@ -46,6 +51,31 @@ const progressWidthClass = computed(() => {
     width: `${(rangeValueIndex / (rangeValuesLength - 1)) * 100}%`,
   };
 });
+
+function setPointOpacityClass(index, value) {
+  if (index === 0 || index === props.rangeValues.length - 1)
+    return "opacity-100";
+
+  if (props.showHelp) {
+    if (value === props.modelValue) {
+      return "opacity-100";
+    } else {
+      return "opacity-0";
+    }
+  } else {
+    return "opacity-100";
+  }
+}
+
+const lableArray = computed(() => {
+  if (props.showHelp)
+    return [
+      props.rangeValues[0],
+      props.rangeValues[props.rangeValues.length - 1],
+    ];
+
+  return props.rangeValues;
+});
 </script>
 
 <template>
@@ -56,7 +86,7 @@ const progressWidthClass = computed(() => {
 
     <div class="mb-6 flex items-center justify-between">
       <span
-        v-for="value in props.rangeValues"
+        v-for="value in lableArray"
         :key="value.label"
         class="whitespace-nowrap text-center font-onest font-light text-white"
         :class="
@@ -74,7 +104,7 @@ const progressWidthClass = computed(() => {
         v-model="model"
         type="range"
         min="1"
-        max="5"
+        :max="props.rangeValues.length"
         step="1"
         class="z-10 w-full"
       />
@@ -94,13 +124,25 @@ const progressWidthClass = computed(() => {
           :class="[
             setPointSizeClass(index, value.value),
             setPointBackgroundClass(value.value),
+            setPointOpacityClass(index, value.value),
             {
               'before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-primary-gradient after:absolute after:left-1/2 after:top-1/2 after:h-2 after:w-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-white':
                 value.value === props.modelValue,
             },
           ]"
           @click="emit('update:model-value', Number(value.value))"
-        />
+        >
+          <template v-if="props.showHelp">
+            <span
+              class="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-center font-onest text-sm font-light leading-4 text-white opacity-70 first:text-xs last:text-xs md:text-xs"
+              :class="{
+                hidden: index === 0 || index === props.rangeValues.length - 1,
+              }"
+            >
+              {{ value.label }}
+            </span>
+          </template>
+        </div>
       </div>
     </div>
   </div>

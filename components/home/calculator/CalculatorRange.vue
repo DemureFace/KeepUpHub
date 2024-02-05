@@ -36,7 +36,7 @@ const currentPrice = computed(() => {
 
 <template>
   <div
-    class="container flex flex-col md:flex-row md:items-end md:justify-between md:gap-6"
+    class="flex flex-col md:flex-row md:items-end md:justify-between md:gap-6"
   >
     <BaseInputRange
       v-model="model"

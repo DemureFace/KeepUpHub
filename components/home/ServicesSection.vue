@@ -45,7 +45,7 @@ const serviceCards = [
 
         <h3
           v-text="$t(card.title)"
-          class="font-onest text-2xl font-bold text-white"
+          class="text-center font-onest text-2xl font-bold text-white"
         />
 
         <p
@@ -53,7 +53,7 @@ const serviceCards = [
           class="text-center font-onest text-sm font-light text-white"
         />
 
-        <BaseButton onlyIcon iconRotate="rotate-90" />
+        <BaseButton onlyIcon iconRotate="rotate-90" class="mt-auto" />
       </li>
 
       <div class="h-1 w-1 md:hidden" />
