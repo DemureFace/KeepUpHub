@@ -3,8 +3,14 @@ import CalculatorRange from "./CalculatorRange.vue";
 
 import { useCalculator } from "./useCalculator";
 
-const { serviceList, checkedServices, rangesList, monthValue, monthRangeList } =
-  useCalculator();
+const {
+  serviceList,
+  checkedServices,
+  rangesList,
+  monthValue,
+  monthRangeList,
+  totalCost,
+} = useCalculator();
 </script>
 
 <template>
@@ -53,13 +59,36 @@ const { serviceList, checkedServices, rangesList, monthValue, monthRangeList } =
         />
       </template>
 
-      <BaseInputRange
-        v-model="monthValue"
-        :range-values="monthRangeList"
-        title="Термін сервісу:"
-        show-help
-        class="mb-8 w-full md:mb-0"
-      />
+      <div
+        v-if="checkedServices.length > 0"
+        class="flex flex-col lg:flex-row lg:items-end lg:justify-between"
+      >
+        <BaseInputRange
+          v-model="monthValue"
+          title="calculator_section.ranges.period.title"
+          :range-values="monthRangeList"
+          :should-translate="false"
+          class="mb-16 w-full md:max-w-[446px] lg:mb-0"
+        />
+
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-2 md:flex-row md:gap-4">
+            <h4 class="font-onest text-2xl font-bold text-white">
+              {{ $t("calculator_section.ranges.total") }}
+            </h4>
+
+            <span
+              class="bg-gradient-to-r from-primary-200 to-primary-100 bg-clip-text font-onest text-[32px] font-bold leading-9 text-transparent"
+            >
+              {{ totalCost }}
+            </span>
+          </div>
+
+          <BaseButton widthClass="w-full md:w-fit" class="lg:ml-auto">
+            Замовити послуги
+          </BaseButton>
+        </div>
+      </div>
     </div>
   </section>
 </template>

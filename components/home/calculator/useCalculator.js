@@ -80,48 +80,20 @@ export function useCalculator() {
       value: 1,
     },
     {
-      label: "2",
+      label: "6",
       value: 2,
     },
     {
-      label: "3",
+      label: "12",
       value: 3,
     },
     {
-      label: "4",
+      label: "24",
       value: 4,
     },
     {
-      label: "5",
+      label: "36 місяців",
       value: 5,
-    },
-    {
-      label: "6",
-      value: 6,
-    },
-    {
-      label: "7",
-      value: 7,
-    },
-    {
-      label: "8",
-      value: 8,
-    },
-    {
-      label: "9",
-      value: 9,
-    },
-    {
-      label: "10",
-      value: 10,
-    },
-    {
-      label: "11",
-      value: 11,
-    },
-    {
-      label: "12 місяців",
-      value: 12,
     },
   ];
 
@@ -142,11 +114,28 @@ export function useCalculator() {
     },
   ]);
 
+  const totalCost = computed(() => {
+    return checkedServices.value.reduce((totalPrice, service) => {
+      const range = rangesList.value.find(({ id }) => service === id);
+
+      if (range) {
+        const { price = 0 } =
+          range.rangeValues.find(({ value }) => value === range.modelValue) ||
+          {};
+
+        totalPrice += price * monthValue.value;
+      }
+
+      return totalPrice;
+    }, 0);
+  });
+
   return {
     serviceList,
     checkedServices,
     rangesList,
     monthValue,
     monthRangeList,
+    totalCost,
   };
 }
