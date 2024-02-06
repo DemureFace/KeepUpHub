@@ -110,6 +110,12 @@
     }
   },
 
+  "contac_us_section": {
+    "links": {
+      "title": "Написати нам:"
+    }
+  },
+
   "questions_section": {
     "title": "Найпопулярніші запитання",
 

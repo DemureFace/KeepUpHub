@@ -6,6 +6,7 @@ import ChoiceSection from "~/components/home/ChoiceSection.vue";
 import ResultsSection from "~/components/home/ResultsSection.vue";
 import FeedbackSection from "~/components/home/FeedbackSection.vue";
 import CalculatorSection from "~/components/home/calculator/CalculatorSection.vue";
+import ContactUsSection from "~/components/home/ContactUsSection.vue";
 import QuestionsSection from "~/components/home/QuestionsSection.vue";
 </script>
 
@@ -23,6 +24,8 @@ import QuestionsSection from "~/components/home/QuestionsSection.vue";
   <FeedbackSection class="mb-[100px] md:mb-36 xl:mb-44" />
 
   <CalculatorSection class="mb-[100px]" />
+
+  <ContactUsSection class="mb-[100px] md:mb-36 xl:mb-44" />
 
   <QuestionsSection />
 </template>

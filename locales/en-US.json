@@ -81,6 +81,12 @@
     }
   },
 
+  "contac_us_section": {
+    "links": {
+      "title": "Write to us:"
+    }
+  },
+
   "questions_section": {
     "title": "The most popular questions",
 
