@@ -47,17 +47,14 @@
 
   "calculator_section": {
     "title": "cost calculator",
-
     "description": {
       "help": "You can use the calculator to calculate the approximate cost of services. For an accurate calculation of the project cost, ",
       "apply": "please contact us"
     },
-
     "type": "Choose a service type:",
-
     "ranges": {
       "cost": "Estimated cost in USD:",
-
+      "total": "Total cost:",
       "customer-base": {
         "title": "Volume of client base per month:",
         "options": {
@@ -68,7 +65,6 @@
           "fifth": "10 001+"
         }
       },
-
       "support": {
         "title": "Number of requests per month:",
         "options": {
@@ -78,6 +74,9 @@
           "fourth": "5001 - 10000",
           "fifth": "10 001+"
         }
+      },
+      "period": {
+        "title": "The service period is in months:"
       }
     }
   },

@@ -15,9 +15,9 @@ const props = defineProps({
     default: () => [],
   },
 
-  showHelp: {
+  shouldTranslate: {
     type: Boolean,
-    default: false,
+    default: true,
   },
 });
 
@@ -41,6 +41,26 @@ function setPointBackgroundClass(value) {
   return value <= props.modelValue ? "bg-primary-gradient" : "bg-gray-500";
 }
 
+function setPointTextPositionClass(index) {
+  const isFirst = index === 0;
+  const LastPoint = index === props.rangeValues.length - 1;
+
+  if (isFirst) return "left-0 -top-[34px]";
+  if (LastPoint) return "right-0 -top-[34px]";
+
+  return "left-1/2 -top-9 -translate-x-1/2";
+}
+
+function setPointTextSizeClass(index, value) {
+  const isFirstOrLastPoint =
+    index === 0 || index === props.rangeValues.length - 1;
+
+  if (isFirstOrLastPoint) return "text-xs";
+  if (value === props.modelValue) return "text-xs";
+
+  return "text-[8px] md:text-xs";
+}
+
 const progressWidthClass = computed(() => {
   const rangeValuesLength = props.rangeValues.length;
   const rangeValueIndex = props.rangeValues.findIndex(
@@ -51,53 +71,13 @@ const progressWidthClass = computed(() => {
     width: `${(rangeValueIndex / (rangeValuesLength - 1)) * 100}%`,
   };
 });
-
-function setPointOpacityClass(index, value) {
-  if (index === 0 || index === props.rangeValues.length - 1)
-    return "opacity-100";
-
-  if (props.showHelp) {
-    if (value === props.modelValue) {
-      return "opacity-100";
-    } else {
-      return "opacity-0";
-    }
-  } else {
-    return "opacity-100";
-  }
-}
-
-const lableArray = computed(() => {
-  if (props.showHelp)
-    return [
-      props.rangeValues[0],
-      props.rangeValues[props.rangeValues.length - 1],
-    ];
-
-  return props.rangeValues;
-});
 </script>
 
 <template>
   <div class="relative flex w-full flex-col">
-    <h4 class="mb-4 text-lg font-bold text-white md:text-2xl">
+    <h4 class="mb-14 text-lg font-bold text-white md:text-2xl">
       {{ $t(props.title) }}
     </h4>
-
-    <div class="mb-6 flex items-center justify-between">
-      <span
-        v-for="value in lableArray"
-        :key="value.label"
-        class="whitespace-nowrap text-center font-onest font-light text-white"
-        :class="
-          value.value === props.modelValue
-            ? 'text-xs'
-            : 'text-[8px] leading-4 first:text-xs last:text-xs md:text-xs'
-        "
-      >
-        {{ $t(value.label) }}
-      </span>
-    </div>
 
     <div class="relative flex">
       <input
@@ -124,7 +104,6 @@ const lableArray = computed(() => {
           :class="[
             setPointSizeClass(index, value.value),
             setPointBackgroundClass(value.value),
-            setPointOpacityClass(index, value.value),
             {
               'before:absolute before:left-1/2 before:top-1/2 before:h-4 before:w-4 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-primary-gradient after:absolute after:left-1/2 after:top-1/2 after:h-2 after:w-2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-white':
                 value.value === props.modelValue,
@@ -132,16 +111,15 @@ const lableArray = computed(() => {
           ]"
           @click="emit('update:model-value', Number(value.value))"
         >
-          <template v-if="props.showHelp">
-            <span
-              class="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-center font-onest text-sm font-light leading-4 text-white opacity-70 first:text-xs last:text-xs md:text-xs"
-              :class="{
-                hidden: index === 0 || index === props.rangeValues.length - 1,
-              }"
-            >
-              {{ value.label }}
-            </span>
-          </template>
+          <span
+            class="absolute h-[19px] whitespace-nowrap text-center font-onest font-light text-white"
+            :class="[
+              setPointTextPositionClass(index),
+              setPointTextSizeClass(index, value.value),
+            ]"
+          >
+            {{ props.shouldTranslate ? $t(value.label) : value.label }}
+          </span>
         </div>
       </div>
     </div>
