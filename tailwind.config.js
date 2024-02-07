@@ -14,6 +14,7 @@ module.exports = {
           300: "#5A5A5A",
         },
         dark: "#141414",
+        danger: "#DE3535",
       },
 
       screens: {
