@@ -17,7 +17,7 @@ const props = defineProps({
 
   type: {
     type: String,
-    default: "number",
+    default: "text",
   },
 
   label: {
@@ -28,6 +28,11 @@ const props = defineProps({
   placeholder: {
     type: String,
     default: null,
+  },
+
+  errors: {
+    type: Array,
+    default: () => [],
   },
 
   isValid: {
@@ -76,7 +81,7 @@ const symbolColor = computed(() => {
         :id="props.id"
         :name="props.name"
         :type="props.type"
-        :placeholder="props.placeholder"
+        :placeholder="$t(props.placeholder)"
         class="min-w-0 grow appearance-none border-none bg-transparent p-0 font-onest text-sm font-normal text-white outline-none placeholder:text-white/30 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
       />
     </div>
@@ -86,5 +91,7 @@ const symbolColor = computed(() => {
       class="absolute -right-1.5 top-1 flex h-1.5 w-1.5 items-center transition-colors duration-300"
       :class="symbolColor"
     />
+
+    <BaseInputErrors :errors="props.errors" />
   </div>
 </template>
