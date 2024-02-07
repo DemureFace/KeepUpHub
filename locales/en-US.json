@@ -82,6 +82,17 @@
   },
 
   "contac_us_section": {
+    "title": "LEAVE YOUR CONTACT",
+    "sub_title": " and we will contact you",
+    "description": "Interested in the exact cost of the project? Fill out the form, we will calculate the cost and contact you to announce it",
+    "form": {
+      "inputs": {
+        "name": "What is your name?",
+        "phone": "Your phone number",
+        "email": "Your email address"
+      },
+      "button_text": "Call me back"
+    },
     "links": {
       "title": "Write to us:"
     }
