@@ -132,7 +132,10 @@ onMounted(() => {
       @click="toggleDropdown"
     >
       <div class="flex justify-between gap-2.5">
-        <div class="flex max-w-[calc(100%-42px)] gap-2">
+        <div
+          class="flex w-full gap-2"
+          :class="{ 'max-w-[calc(100%-42px)]': !selectedImage }"
+        >
           <img
             v-if="selectedImage"
             :src="selectedImage.src"
