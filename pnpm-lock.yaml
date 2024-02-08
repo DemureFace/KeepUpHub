@@ -11,6 +11,9 @@ dependencies:
   '@vuelidate/validators':
     specifier: ^2.0.4
     version: 2.0.4(vue@3.4.16)
+  vue3-toastify:
+    specifier: ^0.2.1
+    version: 0.2.1(vue@3.4.16)
 
 devDependencies:
   '@nuxtjs/i18n':
@@ -1545,6 +1548,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -4547,6 +4551,10 @@ packages:
     hasBin: true
     dev: true
 
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
+    dev: true
+
   /negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
@@ -6953,6 +6961,18 @@ packages:
       '@vue/devtools-api': 6.5.1
       vue: 3.4.16
     dev: true
+
+  /vue3-toastify@0.2.1(vue@3.4.16):
+    resolution: {integrity: sha512-u4i5LCu1q5qs4L4Kbjb4u8NipCS8ox1fCHQ6XFS62676xnA6Q/AJRpZEkAurTMp723LeH6eQX6k9+24bKf1T4Q==}
+    engines: {node: '>=16', npm: '>=7'}
+    peerDependencies:
+      vue: '>=3.2.0'
+    peerDependenciesMeta:
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.4.16
+    dev: false
 
   /vue@3.4.16:
     resolution: {integrity: sha512-l5/KcZRp3GbsFXQGeCL9ll1JfRU285K/7l8mZM+dEO+CnE1j26MvfBKJi17iCRRwstl+Jz7KSLlzj9L79fB6WA==}

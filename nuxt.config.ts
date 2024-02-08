@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      botUrl: process.env.BOT_URL,
+      botToken: process.env.BOT_TOKEN,
+      chatId: process.env.CHAT_ID,
+    },
+  },
   app: {
     head: {
       meta: [

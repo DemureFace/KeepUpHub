@@ -1,10 +1,4 @@
-import {
-  required,
-  email,
-  minLength,
-  alpha,
-  numeric,
-} from "@vuelidate/validators";
+import { required, email, minLength, helpers } from "@vuelidate/validators";
 
 import BaseInput from "@/components/base/BaseInput.vue";
 import BaseSelect from "@/components/base/BaseSelect.vue";
@@ -97,9 +91,24 @@ export function useForm() {
     },
   ]);
 
+  const isValidPhone = (value) => {
+    if (value === "") return true;
+
+    const pattern = /^\+?\d{5,}$/;
+
+    return pattern.test(value);
+  };
+
   const rules = {
-    name: { required, alpha, minLength: minLength(3) },
-    phone: { required, numeric, minLength: minLength(5) },
+    name: { required, minLength: minLength(3) },
+    phone: {
+      required,
+      isValidPhone: helpers.withMessage(
+        "Value is not a valid phone number.",
+        isValidPhone,
+      ),
+      minLength: minLength(5),
+    },
     email: { required, email },
     time: { required },
     request: { required },
