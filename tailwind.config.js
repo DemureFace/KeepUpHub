@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./components/**/*.vue",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./nuxt.config.{js,ts}",
+    "./assets/css/global.css",
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,6 +18,8 @@ module.exports = {
           100: "#D9D9D9",
           200: "#242424",
           300: "#5A5A5A",
+          400: "#1E2026",
+          500: "#3E4147",
         },
         dark: "#141414",
         danger: "#DE3535",
@@ -23,6 +31,7 @@ module.exports = {
         lg: "960px",
         xl: "1248px",
         "2xl": "1632px",
+        "can-hover": { raw: "(hover: hover) and (pointer: fine)" },
       },
 
       fontFamily: {

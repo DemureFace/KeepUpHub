@@ -91,6 +91,28 @@
         "phone": "Your phone number",
         "email": "Your email address"
       },
+      "select": {
+        "time": {
+          "placeholder": "Desired time",
+          "options": {
+            "first": "Now",
+            "second": "12:00-13:00",
+            "third": "13:00-14:00",
+            "fourth": "14:00-15:00",
+            "fifth": "15:00-16:00",
+            "sixth": "16:00-17:00"
+          }
+        },
+        "request": {
+          "placeholder": "Request",
+          "options": {
+            "first": "Increase in activity",
+            "second": "Remarketing",
+            "third": "Collecting feedback from customers",
+            "fourth": "Turnkey services for complete maintenance"
+          }
+        }
+      },
       "button_text": "Call me back"
     },
     "links": {

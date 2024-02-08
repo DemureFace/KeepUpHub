@@ -39,7 +39,7 @@ const serviceCards = [
       <li
         v-for="(card, i) in serviceCards"
         :key="i"
-        class="relative box-content flex cursor-pointer flex-col items-center gap-6 px-8 py-12 after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:rounded-2xl after:border after:border-primary-100 after:transition-all after:duration-300 hover:after:border-[5px]"
+        class="can-hover:hover:after:border-[5px] relative box-content flex cursor-pointer flex-col items-center gap-6 px-8 py-12 after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:rounded-2xl after:border after:border-primary-100 after:transition-all after:duration-300"
       >
         <img :src="card.img" alt="" class="h-20 w-20" />
 

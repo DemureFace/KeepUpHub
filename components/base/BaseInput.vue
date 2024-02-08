@@ -57,14 +57,14 @@ const borderColor = computed(() => {
   if (props.isValid) return "border-primary-100";
   if (props.isInvalid) return "border-danger";
 
-  return "border-white/30 group-hover:border-white/50";
+  return "border-white/30 can-hover:group-hover:border-white/50";
 });
 
 const symbolColor = computed(() => {
   if (props.isValid) return "text-primary-100";
   if (props.isInvalid) return "text-danger";
 
-  return "text-white/30 group-hover:text-white/50";
+  return "text-white/30 can-hover:group-hover:text-white/50";
 });
 </script>
 
@@ -82,6 +82,7 @@ const symbolColor = computed(() => {
         :name="props.name"
         :type="props.type"
         :placeholder="$t(props.placeholder)"
+        autocomplete="off"
         class="min-w-0 grow appearance-none border-none bg-transparent p-0 font-onest text-sm font-normal text-white outline-none placeholder:text-white/30 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
       />
     </div>
@@ -92,6 +93,6 @@ const symbolColor = computed(() => {
       :class="symbolColor"
     />
 
-    <BaseInputErrors :errors="props.errors" />
+    <BaseValidationErrors :errors="props.errors" />
   </div>
 </template>

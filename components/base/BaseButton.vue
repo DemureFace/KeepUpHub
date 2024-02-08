@@ -34,7 +34,7 @@ const border = computed(() => {
 });
 
 const buttonClasses = computed(() => [
-  "flex flex-row items-center justify-center gap-2.5 focus:outline-none bg-primary-gradient group border border-transparent hover:border-primary-100 hover:bg-none",
+  "flex flex-row items-center justify-center gap-2.5 focus:outline-none bg-primary-gradient group border border-transparent can-hover:hover:border-primary-100 can-hover:hover:bg-none",
   paddings.value,
   border.value,
   props.widthClass,
@@ -45,7 +45,7 @@ const buttonClasses = computed(() => [
   <button :class="buttonClasses" :type="props.type">
     <span
       v-if="!props.onlyIcon"
-      class="font-onest text-base font-bold text-black group-hover:text-primary-100"
+      class="can-hover:group-hover:text-primary-100 font-onest text-base font-bold text-black"
     >
       <slot />
     </span>
@@ -56,7 +56,7 @@ const buttonClasses = computed(() => [
       viewBox="0 0 18 18"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      class="text-black group-hover:text-primary-100"
+      class="can-hover:group-hover:text-primary-100 text-black"
       :class="iconRotate"
     >
       <path
