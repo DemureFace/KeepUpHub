@@ -1,5 +1,6 @@
 <script setup>
 import { useVuelidate } from "@vuelidate/core";
+const { t } = useI18n();
 
 import { useForm } from "./useForm";
 
@@ -10,7 +11,34 @@ const v$ = useVuelidate(rules, formData);
 async function submitForm() {
   const result = await v$.value.$validate();
 
-  console.log(result);
+  if (!result) return;
+
+  const {
+    public: { botUrl, botToken, chatId },
+  } = useRuntimeConfig();
+
+  const text = `*Name*: ${formData.name}\n*Phone*: ${formData.phone}\n*Email*: ${formData.email}\n*Time*: ${formData.time}\n*Request*: ${formData.request}`;
+
+  try {
+    const response = await fetch(`${botUrl}${botToken}/sendMessage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text,
+      }),
+    });
+
+    if (response.ok) {
+      useNuxtApp().$toast.success(t("notification.success"));
+    } else {
+      throw new Error({ message: t("notification.error") });
+    }
+  } catch (error) {
+    useNuxtApp().$toast.error(error.message);
+  }
 }
 </script>
 
