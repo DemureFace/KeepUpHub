@@ -71,7 +71,10 @@ function setFieldPosition(name) {
 </script>
 
 <template>
-  <form class="flex flex-col" @submit.prevent="submitForm">
+  <form
+    class="flex w-full flex-col md:max-w-[588px]"
+    @submit.prevent="submitForm"
+  >
     <div
       class="mb-6 grid grid-cols-1 gap-6 md:grid-flow-row md:auto-rows-fr md:grid-cols-2"
     >
