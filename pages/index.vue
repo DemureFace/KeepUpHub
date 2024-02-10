@@ -8,6 +8,14 @@ import FeedbackSection from "~/components/home/FeedbackSection.vue";
 import CalculatorSection from "~/components/home/calculator/CalculatorSection.vue";
 import ContactUsSection from "~/components/home/contact-us/ContactUsSection.vue";
 import QuestionsSection from "~/components/home/QuestionsSection.vue";
+
+useSeoMeta({
+  title: "KeepUpHub",
+  ogTitle: "KeepUpHub",
+  description: "This is my amazing site, let me tell you all about it.",
+  ogDescription: "This is my amazing site, let me tell you all about it.",
+  ogImage: "https://example.com/image.png",
+});
 </script>
 
 <template>

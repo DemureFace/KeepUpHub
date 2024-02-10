@@ -3,9 +3,19 @@ const { locale } = useI18n();
 
 const localeRoute = useLocaleRoute();
 
+function setHtmlLang(locale) {
+  useHead({
+    htmlAttrs: {
+      lang: locale,
+    },
+  });
+}
+
 watch(
   () => locale.value,
-  (newL, oldL) => {
+  (newLocale, oldLocale) => {
+    setHtmlLang(newLocale);
+
     const route = localeRoute();
 
     if (route) {
@@ -13,6 +23,10 @@ watch(
     }
   },
 );
+
+onMounted(() => {
+  setHtmlLang(locale.value);
+});
 </script>
 
 <template>

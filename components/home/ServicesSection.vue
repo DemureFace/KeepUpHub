@@ -39,7 +39,7 @@ const serviceCards = [
       <li
         v-for="(card, i) in serviceCards"
         :key="i"
-        class="can-hover:hover:after:border-[5px] relative box-content flex cursor-pointer flex-col items-center gap-6 px-8 py-12 after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:rounded-2xl after:border after:border-primary-100 after:transition-all after:duration-300"
+        class="relative box-content flex cursor-pointer flex-col items-center gap-6 px-8 py-12 after:absolute after:left-0 after:top-0 after:z-[-1] after:h-full after:w-full after:rounded-2xl after:border after:border-primary-100 after:transition-all after:duration-300 can-hover:hover:after:border-[5px]"
       >
         <img :src="card.img" alt="" class="h-20 w-20" />
 
@@ -53,7 +53,12 @@ const serviceCards = [
           class="text-center font-onest text-sm font-light text-white"
         />
 
-        <BaseButton onlyIcon iconRotate="rotate-90" class="mt-auto" />
+        <BaseButton
+          onlyIcon
+          iconRotate="rotate-90"
+          aria-label="Service"
+          class="mt-auto"
+        />
       </li>
 
       <div class="h-1 w-1 md:hidden" />
