@@ -4,14 +4,19 @@ const { t } = useI18n();
 
 import { useForm } from "./useForm";
 
-const { rules, formData, formFields, fieldComponent, generateText } = useForm();
+const { rules, formData, formFields, fieldComponent, generateText, clearForm } =
+  useForm();
 
 const v$ = useVuelidate(rules, formData);
+
+const isFormSending = ref(false);
 
 async function submitForm() {
   const result = await v$.value.$validate();
 
   if (!result) return;
+
+  isFormSending.value = true;
 
   const {
     public: { botUrl, botToken, chatId },
@@ -32,12 +37,18 @@ async function submitForm() {
     });
 
     if (response.ok) {
+      v$.value.$reset();
+
       useNuxtApp().$toast.success(t("notification.success"));
+
+      clearForm();
     } else {
       throw new Error({ message: t("notification.error") });
     }
   } catch (error) {
     useNuxtApp().$toast.error(error.message);
+  } finally {
+    isFormSending.value = false;
   }
 }
 
@@ -62,7 +73,7 @@ function setFieldPosition(name) {
 <template>
   <form class="flex flex-col" @submit.prevent="submitForm">
     <div
-      class="grid grid-cols-1 gap-4 md:grid-flow-row md:auto-rows-fr md:grid-cols-2 md:gap-6"
+      class="mb-6 grid grid-cols-1 gap-6 md:grid-flow-row md:auto-rows-fr md:grid-cols-2"
     >
       <component
         v-for="field in formFields"
@@ -81,7 +92,11 @@ function setFieldPosition(name) {
       />
     </div>
 
-    <BaseButton type="submit">
+    <BaseButton
+      type="submit"
+      widthClass="w-full md:w-fit"
+      :is-loading="isFormSending"
+    >
       {{ $t("contac_us_section.form.button_text") }}
     </BaseButton>
   </form>

@@ -142,5 +142,18 @@ export function useForm() {
     }, "");
   }
 
-  return { formData, formFields, rules, fieldComponent, generateText };
+  function clearForm() {
+    for (const key in formData) {
+      formData[key] = "";
+    }
+  }
+
+  return {
+    formData,
+    formFields,
+    rules,
+    fieldComponent,
+    generateText,
+    clearForm,
+  };
 }
