@@ -44,6 +44,11 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+
+  isRequired: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const emit = defineEmits(["update:model-value"]);
@@ -88,6 +93,7 @@ const symbolColor = computed(() => {
     </div>
 
     <div
+      v-if="isRequired"
       v-text="'*'"
       class="absolute -right-1.5 top-1 flex h-1.5 w-1.5 items-center transition-colors duration-300"
       :class="symbolColor"

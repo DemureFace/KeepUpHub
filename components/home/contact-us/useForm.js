@@ -2,12 +2,14 @@ import { required, email, minLength, helpers } from "@vuelidate/validators";
 
 import BaseInput from "@/components/base/BaseInput.vue";
 import BaseSelect from "@/components/base/BaseSelect.vue";
+import BaseTextarea from "@/components/base/BaseTextarea.vue";
 
 export function useForm() {
   const formData = reactive({
     name: "",
     phone: "",
     email: "",
+    comment: "",
     time: "",
     request: "",
   });
@@ -17,18 +19,25 @@ export function useForm() {
       id: "name",
       name: "name",
       placeholder: "contac_us_section.form.inputs.name",
+      isRequired: true,
     },
     {
       id: "phone",
       name: "phone",
       type: "tel",
       placeholder: "contac_us_section.form.inputs.phone",
+      isRequired: true,
     },
     {
       id: "email",
       name: "email",
       type: "email",
       placeholder: "contac_us_section.form.inputs.email",
+    },
+    {
+      id: "comment",
+      name: "comment",
+      placeholder: "contac_us_section.form.textarea",
     },
     {
       id: "time",
@@ -109,18 +118,42 @@ export function useForm() {
       ),
       minLength: minLength(5),
     },
-    email: { required, email },
-    time: { required },
-    request: { required },
+    email: {},
+    comment: {},
+    time: {},
+    request: {},
   };
 
   const fieldComponent = markRaw({
     name: BaseInput,
     phone: BaseInput,
     email: BaseInput,
+    comment: BaseTextarea,
     time: BaseSelect,
     request: BaseSelect,
   });
 
-  return { formData, formFields, rules, fieldComponent };
+  function generateText() {
+    return Object.entries(formData).reduce((acc, [key, value]) => {
+      if (value) {
+        return `${acc}\n*${key}*: ${value}`;
+      }
+      return acc;
+    }, "");
+  }
+
+  function clearForm() {
+    for (const key in formData) {
+      formData[key] = "";
+    }
+  }
+
+  return {
+    formData,
+    formFields,
+    rules,
+    fieldComponent,
+    generateText,
+    clearForm,
+  };
 }
