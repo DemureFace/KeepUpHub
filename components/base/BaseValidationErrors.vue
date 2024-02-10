@@ -8,15 +8,14 @@ const props = defineProps({
 </script>
 
 <template>
-  <TransitionGroup name="list" tag="ul" class="relative pl-1">
-    <li
-      v-for="error in props.errors"
-      :key="error.$uid"
-      class="baseValidation-error text-danger w-full whitespace-nowrap pt-1 font-mono text-xs font-medium"
+  <Transition name="list">
+    <span
+      v-if="props.errors?.[0]?.$message"
+      class="absolute top-full w-full whitespace-nowrap pt-1 font-mono text-xs font-medium text-danger"
     >
-      {{ error.$message }}
-    </li>
-  </TransitionGroup>
+      {{ props.errors[0].$message }}
+    </span>
+  </Transition>
 </template>
 
 <style scoped>

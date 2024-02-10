@@ -91,6 +91,7 @@
         "phone": "Your phone number",
         "email": "Your email address"
       },
+      "textarea": "Comment",
       "select": {
         "time": {
           "placeholder": "Desired time",
