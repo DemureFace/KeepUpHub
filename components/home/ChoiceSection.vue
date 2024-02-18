@@ -35,7 +35,7 @@ const choiceList = [
     <div class="container mb-8">
       <h2
         v-text="$t('choice_section.title')"
-        class="font-onest text-2xl font-bold text-white"
+        class="font-vinnytsia text-2xl font-bold text-white"
       />
     </div>
 
@@ -59,7 +59,7 @@ const choiceList = [
         <div class="flex flex-col items-center gap-6 px-4 xl:px-8">
           <h3
             v-text="$t(choice.title)"
-            class="font-onest text-lg font-bold text-white"
+            class="font-vinnytsia text-lg font-bold text-white"
           />
 
           <p

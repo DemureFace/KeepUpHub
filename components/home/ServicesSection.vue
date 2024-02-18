@@ -26,7 +26,7 @@ const serviceCards = [
 <template>
   <section class="w-full overflow-hidden">
     <div class="container mb-14">
-      <h2 class="text-2xl font-bold text-white md:text-4xl">
+      <h2 class="font-vinnytsia text-2xl font-bold text-white md:text-4xl">
         {{ $t("services_section.title") }}
       </h2>
     </div>
@@ -45,7 +45,7 @@ const serviceCards = [
 
         <h3
           v-text="$t(card.title)"
-          class="text-center font-onest text-2xl font-bold text-white"
+          class="font-vinnytsia text-center text-2xl font-bold text-white"
         />
 
         <p

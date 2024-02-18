@@ -48,7 +48,7 @@ const buttonClasses = computed(() => [
 </script>
 
 <template>
-  <button :class="buttonClasses" :type="props.type">
+  <button :class="buttonClasses" class="uppercase" :type="props.type">
     <div
       v-if="props.isLoading"
       class="absolute left-[calc(50%-12px)] top-[calc(50%-12px)] h-6 w-6 animate-spin rounded-full border-4 border-black border-t-transparent"

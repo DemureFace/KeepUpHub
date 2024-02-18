@@ -39,3 +39,17 @@
   font-style: normal;
   src: url("~/assets/fonts/Onest-Black.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Vinnytsia";
+  font-weight: 700;
+  font-style: normal;
+  src: url("~/assets/fonts/VinnytsiaSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Vinnytsia";
+  font-weight: 400;
+  font-style: normal;
+  src: url("~/assets/fonts/VinnytsiaSans-Regular.woff2") format("woff2");
+}

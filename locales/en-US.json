@@ -1,52 +1,182 @@
 {
   "welcome_section": {
-    "welcome_to": "welcome to"
+    "welcome_to": "WELCOME TO",
+    "keepuphub": "KEEPUPHUB!",
+    "sub_title": "CONFIDENCE IN EVERY WORD, EFFICIENCY IN EVERY ACTION.",
+    "description": "is your trusted partner in building strong connections and ​achieving success through effective communication strategies. Every ​contact with us is another step towards your success!",
+    "partner": "KeepUpHub",
+    "button_text": "SERVICES"
+  },
+
+  "services_section": {
+    "title": "Our services",
+
+    "contact_center": {
+      "title": "Contact Center",
+      "description": "Ensuring high-quality customer ​interactions through competent call ​management."
+    },
+
+    "support": {
+      "title": "Support",
+      "description": "Professional online support. Conducting ​chats and online communication with ​customers. Fast and effective issue ​resolution in real-time."
+    },
+
+    "payment_and_anti-fraud": {
+      "title": "Payment & Anti-Fraud",
+      "description": "Developing and implementing effective ​strategies to optimize payment ​processes in your business."
+    },
+
+    "retention": {
+      "title": "Retention",
+      "description": "Increasing loyalty and retaining ​customers through effective email ​management, SMS campaigns, and ​promotional activities."
+    }
+  },
+
+  "services_info_section": {
+    "contact_center": {
+      "title": "Contact center",
+      "button_text": "Order service",
+      "subtitle_first": "GATHERING INFORMATION ​ON NEW PRODUCTS OR ​SERVICES",
+      "description_first": {
+        "first": "We provide services to",
+        "second": "collect detailed information",
+        "third": "from users regarding new ​products or services, helping businesses understand audience reactions and ​improve their offerings."
+      },
+
+      "subtitle_second": "MAINTAINING INTEREST OF ​EXISTING CLIENTS",
+      "description_second": {
+        "first": "We develop strategies to",
+        "second": "increase the average check",
+        "third": "and customer lifetime value, ​aimed at retaining and supporting the activity of your business clients."
+      },
+
+      "subtitle_third": "COST-EFFECTIVENESS OF ​CUSTOMER ACQUISITION",
+      "description_third": {
+        "first": "Calls to",
+        "second": "rekindle interest",
+        "third": "are not just an attempt to save a customer. It's an ​effective way to preserve your own expenses on acquiring new clients."
+      }
+    },
+    "support": {
+      "title": "Support",
+
+      "subtitle_first": "24/7 ACCESSIBILITY",
+      "description_first": {
+        "first": "Our global approach ensures synchronization with time zones,",
+        "second": "providing the best support",
+        "third": "for your clients at their convenience."
+      },
+
+      "subtitle_second": "PROFESSIONAL ONLINE ​SUPPORT",
+      "description_second": {
+        "first": "Quick resolution of technical issues,",
+        "second": "consultations on products or services",
+        "third": ", efficient exchange of information with your clients ​through convenient online chat or email. Your clients receive personalized offers and recommendations during the communication ​process."
+      },
+
+      "subtitle_third": "ANALYSIS AND FEEDBACK",
+      "description_third": {
+        "first": "We analyze chat data,",
+        "second": "identify weaknesses in customer interaction",
+        "third": ", and develop strategies to improve them. We gather feedback ​to optimize products and services."
+      }
+    },
+
+    "payment_and_anti": {
+      "title": "Payments & anti-fraud",
+
+      "subtitle_first": "24/7 ACCESSIBILITY",
+      "description_first": {
+        "first": "Our team of experts provides",
+        "second": "round-the-clock support",
+        "third": "for all inquiries related to payment operations."
+      },
+
+      "subtitle_second": "SOLUTIONS FOR ANY ​BUSINESS",
+      "description_second": {
+        "first": "Quick and effective",
+        "second": "resolution of all payment-related",
+        "third": "issues for the maximum convenience of your business."
+      },
+
+      "subtitle_third": "ENHANCING SECURITY",
+      "description_third": {
+        "first": "Improvement and optimization",
+        "second": "of security level enhancement",
+        "third": ". Systematic analysis of payment processes aimed at their ​optimization and efficiency improvement."
+      }
+    },
+    "retention": {
+      "title": "retention",
+
+      "subtitle_first": "MULTICHANNEL APPROACH",
+      "description_first": {
+        "first": "Communication through email, SMS, and other channels allows for diverse campaigns and deep interaction with various audience ​segments.",
+        "second": "Expanding communication channels",
+        "third": "increases potential touchpoints with the customer, positively impacting conversions ​and sales volumes."
+      },
+
+      "subtitle_second": "MULTIMEDIA CAMPAIGNS",
+      "description_second": {
+        "first": "Utilizing multimedia formats creates",
+        "second": "emotionally rich campaigns",
+        "third": "that are more memorable. Personalized offers enhance interaction ​and interest from clients."
+      },
+
+      "subtitle_third": "REAL-TIME ​ENGAGEMENT",
+      "description_third": {
+        "first": "We respond to changes, creating timely and fresh campaigns that meet the audience's needs at any given moment.",
+        "second": "Instant ​adaptation to the situation",
+        "third": "helps offer timely solutions or promotions that enhance customer retention."
+      }
+    }
   },
 
   "choice_section": {
-    "title": "WHY ARE WE CHOSEN?",
+    "title": "WHY CHOOSE US?",
 
     "experience": {
       "title": "Experience",
-      "description": "We have more than 8 years of successful experience in the iGaming industry, building well-known projects and understanding its peculiarities."
+      "description": "Over 8 years of successful business ​process refinement."
     },
 
     "solutions": {
       "title": "Effective solutions",
-      "description": "We provide advanced communication and support strategies to help your business grow to its full potential."
+      "description": "We integrate cutting-edge strategies in ​communication and support to ensure ​your business thrives to its full ​potential."
     },
 
     "customer-focus": {
       "title": "Customer focus",
-      "description": "Our team is focused on your client, creating a personalised approach and ensuring satisfaction."
+      "description": "Our team is oriented towards your customer, ​creating a personalized approach and ensuring ​satisfaction throughout collaboration."
     }
   },
 
   "results_section": {
-    "title": "results in 2023",
+    "title": "results of 2023",
     "minutes-of-communication": "minutes of communication",
-    "requests": "requests",
-    "deposits": "deposits"
+    "requests": "inquiries",
+    "deposits": "profits"
   },
 
   "feedback_section": {
-    "title": "What our clients say",
+    "title": "WHAT THEY SAY ABOUT US",
 
     "feedbacks": {
       "first": {
-        "text": "The callbacks and traffic checks you conducted exceeded our expectations. The retention team demonstrates a great level of attention to detail and the ability to engage and retain the audience. I would recommend their services to anyone looking for a highly effective retention partner."
+        "text": "Phone calls and traffic monitoring ​exceeded our expectations. The contact center demonstrates a ​high level of attention to detail and ​the ability to engage and retain the ​audience."
       },
       "second": {
-        "text": "With KeepUpHub, we opted for a full-service solution, and the result has been a great pleasure. Their retention and support teams have exceeded all our expectations. From professionalism to speed of execution, KeepUpHub helps us maintain a high standard of service."
+        "text": "KeepUpHub is our reliable partner! ​We have chosen a full range of ​services, and the result is simply ​impressive. From professionalism to ​speed of execution - KeepUpHub ​helps us maintain a high standard of ​service."
       },
       "third": {
-        "text": "KeepUpHub helps our business maintain a high standard of service thanks to their professional support team. Their speed of response and in-depth approach to each client make them an important partner for successful interaction with the audience."
+        "text": "KeepUpHub helps our business ​maintain a high standard of service ​thanks to their professional support ​team. The speed of response and ​deep approach to each client make ​them an important partner for ​successful interaction with the ​audience."
       }
     }
   },
 
   "calculator_section": {
     "title": "cost calculator",
+    "button_text": "I WANT AN EXACT ​PRICE",
     "description": {
       "help": "You can use the calculator to calculate the approximate cost of services. For an accurate calculation of the project cost, ",
       "apply": "please contact us"
@@ -66,6 +196,26 @@
         }
       },
       "support": {
+        "title": "Number of requests per month:",
+        "options": {
+          "first": "up to 500",
+          "second": "501 - 1000",
+          "third": "1001 - 5000",
+          "fourth": "5001 - 10000",
+          "fifth": "10 001+"
+        }
+      },
+      "payment": {
+        "title": "The number of transactions per month:",
+        "options": {
+          "first": "up to 500",
+          "second": "501 - 1000",
+          "third": "1001 - 5000",
+          "fourth": "5001 - 10000",
+          "fifth": "10 001+"
+        }
+      },
+      "retention": {
         "title": "Number of requests per month:",
         "options": {
           "first": "up to 500",
@@ -122,28 +272,28 @@
   },
 
   "questions_section": {
-    "title": "The most popular questions",
+    "title": "FAQS",
 
     "questions": {
       "first": {
-        "question": "Скільки часу минає від заповнення брифу до публікації перших постів?",
-        "answer": "Проведення продзвонів та ​перевірка трафіка за вашою участю ​перевершила наші очікування. Ретеншн-команда демонструє ​великий рівень уваги до деталей і ​вміння залучати та утримувати ​аудиторію. Рекомендую їхні послуги ​для кожного, хто шукає ​високоефективного ​ретеншн-партнера."
+        "question": "WHAT ARE THE ADVANTAGES OF A MULTICHANNEL APPROACH TO CUSTOMER ​INTERACTION?",
+        "answer": "Utilizing all available channels (email, SMS, etc.) ensures deep interaction and maximum audience coverage. This leads to increased potential touchpoints and positively impacts ​conversion and sales volumes."
       },
       "second": {
-        "question": "Які теми можна використовувати для постів?",
-        "answer": "З KeepUpHub ми обрали повний ​спектр послуг, і результат вирушив ​у велике задоволення. Їхні ретеншн та сапорт-команди ​перевершили всі наші очікування. Від професіоналізму до швидкості ​виконання - KeepUpHub допомагає ​нам підтримувати високий стандарт ​обслуговування."
+        "question": "WHY IS IT IMPORTANT TO HAVE A CONTACT CENTER FOR INCREASING SALES?",
+        "answer": "The contact center allows for active interaction with potential and existing customers, addressing their inquiries, and contributes to increased sales through individualized ​approaches and personalized solutions."
       },
       "third": {
-        "question": "Скільки часу минає від заповнення брифу до публікації перших постів?",
-        "answer": "Проведення продзвонів та ​перевірка трафіка за вашою участю ​перевершила наші очікування. Ретеншн-команда демонструє ​великий рівень уваги до деталей і ​вміння залучати та утримувати ​аудиторію. Рекомендую їхні послуги ​для кожного, хто шукає ​високоефективного ​ретеншн-партнера."
+        "question": "HOW DOES YOUR TEAM ENSURE INFORMATION EXCHANGE SECURITY?",
+        "answer": "We utilize advanced technologies and encryption systems to ensure confidentiality and security of information exchange. Access control and monitoring systems guarantee ​customer data security."
       },
       "fourth": {
-        "question": "Які теми можна використовувати для постів?",
-        "answer": "З KeepUpHub ми обрали повний ​спектр послуг, і результат вирушив ​у велике задоволення. Їхні ретеншн та сапорт-команди ​перевершили всі наші очікування. Від професіоналізму до швидкості ​виконання - KeepUpHub допомагає ​нам підтримувати високий стандарт ​обслуговування."
+        "question": "WHY SHOULD WE TRUST KEEPUPHUB?",
+        "answer": "Our experience working with various businesses allows us to precisely understand how to ensure customer retention in different industries."
       },
       "fifth": {
-        "question": "Скільки часу минає від заповнення брифу до публікації перших постів?",
-        "answer": "Проведення продзвонів та ​перевірка трафіка за вашою участю ​перевершила наші очікування. Ретеншн-команда демонструє ​великий рівень уваги до деталей і ​вміння залучати та утримувати ​аудиторію. Рекомендую їхні послуги ​для кожного, хто шукає ​високоефективного ​ретеншн-партнера."
+        "question": "HOW QUICKLY CAN WE LAUNCH SERVICES FOR MY BUSINESS?",
+        "answer": "Our team is ready for a quick and efficient launch of any service volume for your business. We work according to your timelines and are prepared to provide operational support at ​any time."
       }
     }
   },

@@ -7,7 +7,7 @@ import ContactUsLinks from "./ContactUsLinks.vue";
   <section class="container">
     <h2
       v-text="$t('contac_us_section.title')"
-      class="font-onest text-4xl font-bold uppercase text-white"
+      class="font-vinnytsia text-4xl font-bold uppercase text-white"
     />
 
     <h2

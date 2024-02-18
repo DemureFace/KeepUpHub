@@ -18,27 +18,27 @@ export function useCalculator() {
     {
       label: "calculator_section.ranges.customer-base.options.first",
       value: 1,
-      price: 1000,
+      price: 2500,
     },
     {
       label: "calculator_section.ranges.customer-base.options.second",
       value: 2,
-      price: 2500,
+      price: 5000,
     },
     {
       label: "calculator_section.ranges.customer-base.options.third",
       value: 3,
-      price: 3700,
+      price: 10000,
     },
     {
       label: "calculator_section.ranges.customer-base.options.fourth",
       value: 4,
-      price: 5000,
+      price: 25000,
     },
     {
       label: "calculator_section.ranges.customer-base.options.fifth",
       value: 5,
-      price: 7000,
+      price: 50000,
     },
   ];
 
@@ -48,27 +48,87 @@ export function useCalculator() {
     {
       label: "calculator_section.ranges.support.options.first",
       value: 1,
-      price: 1000,
+      price: 2500,
     },
     {
       label: "calculator_section.ranges.support.options.second",
       value: 2,
-      price: 2500,
+      price: 5000,
     },
     {
       label: "calculator_section.ranges.support.options.third",
       value: 3,
-      price: 3700,
+      price: 10000,
     },
     {
       label: "calculator_section.ranges.support.options.fourth",
       value: 4,
-      price: 5000,
+      price: 25000,
     },
     {
       label: "calculator_section.ranges.support.options.fifth",
       value: 5,
-      price: 7000,
+      price: 50000,
+    },
+  ];
+
+  const paymentsAndAntiFraudValue = ref(1);
+
+  const paymentsAndAntiFraudRangeList = [
+    {
+      label: "calculator_section.ranges.payment.options.first",
+      value: 1,
+      price: 2500,
+    },
+    {
+      label: "calculator_section.ranges.payment.options.second",
+      value: 2,
+      price: 5000,
+    },
+    {
+      label: "calculator_section.ranges.payment.options.third",
+      value: 3,
+      price: 10000,
+    },
+    {
+      label: "calculator_section.ranges.payment.options.fourth",
+      value: 4,
+      price: 25000,
+    },
+    {
+      label: "calculator_section.ranges.payment.options.fifth",
+      value: 5,
+      price: 50000,
+    },
+  ];
+
+  const retentionValue = ref(1);
+
+  const retentionRangeList = [
+    {
+      label: "calculator_section.ranges.retention.options.first",
+      value: 1,
+      price: 2500,
+    },
+    {
+      label: "calculator_section.ranges.retention.options.second",
+      value: 2,
+      price: 5000,
+    },
+    {
+      label: "calculator_section.ranges.retention.options.third",
+      value: 3,
+      price: 10000,
+    },
+    {
+      label: "calculator_section.ranges.retention.options.fourth",
+      value: 4,
+      price: 25000,
+    },
+    {
+      label: "calculator_section.ranges.retention.options.fifth",
+      value: 5,
+      price: 50000,
     },
   ];
 
@@ -111,6 +171,20 @@ export function useCalculator() {
       label: "(Support)",
       modelValue: supportValue,
       rangeValues: supportRangeList,
+    },
+    {
+      id: "payments-and-anti-fraud",
+      title: "calculator_section.ranges.payment.title",
+      label: "(Payments & Anti-Fraud)",
+      modelValue: paymentsAndAntiFraudValue,
+      rangeValues: paymentsAndAntiFraudRangeList,
+    },
+    {
+      id: "retention",
+      title: "calculator_section.ranges.retention.title",
+      label: "(Retention)",
+      modelValue: retentionValue,
+      rangeValues: retentionRangeList,
     },
   ]);
 

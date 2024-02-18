@@ -24,7 +24,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="bg-gray-200 flex h-full flex-col items-center rounded-2xl py-12 md:px-4 xl:px-8"
+    class="flex h-full flex-col items-center rounded-2xl bg-gray-200 py-12 md:px-4 xl:px-8"
   >
     <img
       :src="props.image.src"
@@ -34,7 +34,7 @@ const props = defineProps({
 
     <h3
       v-text="props.name"
-      class="mb-1 font-onest text-2xl font-bold text-white"
+      class="font-vinnytsia mb-1 text-2xl font-bold text-white"
     />
 
     <h4

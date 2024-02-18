@@ -36,6 +36,7 @@ module.exports = {
 
       fontFamily: {
         onest: ["Onest", "sans-serif"],
+        vinnytsia: ["Vinnytsia", "sans-serif"],
       },
 
       fontSize: {

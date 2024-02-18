@@ -35,7 +35,7 @@ const props = defineProps({
       <div class="flex flex-col">
         <h3
           v-text="props.name"
-          class="font-onest text-lg font-bold text-white"
+          class="font-vinnytsia text-lg font-bold text-white"
         />
 
         <h4

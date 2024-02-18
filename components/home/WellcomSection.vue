@@ -10,9 +10,14 @@ const tickerText = [
 
 <template>
   <section class="relative">
+    <img
+      src="/images/background/1.jpg"
+      alt=""
+      class="absolute top-[-100px] z-[-20]"
+    />
     <div class="container relative">
       <div class="md:w-[363px] lg:w-[434px] xl:w-full">
-        <h1 class="mb-1 text-5xl font-bold uppercase text-white">
+        <h1 class="mb-1 font-vinnytsia text-5xl font-bold uppercase text-white">
           {{ $t("welcome_section.welcome_to") }}
           <span class="text-primary-100">{{
             $t("welcome_section.keepuphub")

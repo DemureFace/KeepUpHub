@@ -75,7 +75,7 @@ const progressWidthClass = computed(() => {
 
 <template>
   <div class="relative flex w-full flex-col">
-    <h4 class="mb-14 text-lg font-bold text-white md:text-2xl">
+    <h4 class="font-vinnytsia mb-14 text-lg font-bold text-white md:text-2xl">
       {{ $t(props.title) }}
     </h4>
 

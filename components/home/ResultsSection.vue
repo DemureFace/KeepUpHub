@@ -74,7 +74,7 @@ onMounted(async () => {
     <div class="container">
       <h2
         v-text="$t('results_section.title')"
-        class="mb-14 text-center font-onest text-5xl font-bold uppercase text-white md:max-w-[512px] md:text-left md:text-8xl"
+        class="font-vinnytsia mb-14 text-center text-5xl font-bold uppercase text-white md:max-w-[512px] md:text-left md:text-8xl"
       />
 
       <div
@@ -99,7 +99,7 @@ onMounted(async () => {
             <h3
               :id="`result-${index}`"
               v-text="result.number"
-              class="font-onest text-[40px] font-bold leading-[48px]"
+              class="font-vinnytsia text-[40px] font-bold leading-[48px]"
               :class="
                 index === resultList.length - 1
                   ? 'w-[250px] bg-gradient-to-r from-primary-200 to-primary-100 bg-clip-text text-right text-transparent'

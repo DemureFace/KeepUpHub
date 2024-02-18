@@ -99,6 +99,7 @@ function setFieldPosition(name) {
       type="submit"
       widthClass="w-full md:w-fit"
       :is-loading="isFormSending"
+      class="z-[-1]"
     >
       {{ $t("contac_us_section.form.button_text") }}
     </BaseButton>

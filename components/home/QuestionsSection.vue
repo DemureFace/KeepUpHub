@@ -35,7 +35,7 @@ const currentOpenIndex = ref(0);
     <div class="container">
       <h2
         v-text="$t('questions_section.title')"
-        class="mb-4 font-onest text-2xl font-bold uppercase text-white md:text-4xl"
+        class="font-vinnytsia mb-4 text-2xl font-bold uppercase text-white md:text-4xl"
       />
 
       <ul class="flex flex-col gap-4">

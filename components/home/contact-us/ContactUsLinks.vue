@@ -1,21 +1,21 @@
 <script setup>
 const linksList = [
   {
-    link: "mailto:m.baedakov@gmail.com",
+    link: "mailto:",
     image: {
       src: "/images/svg/e-mail.svg",
       alt: "Email",
     },
   },
   {
-    link: "https://wa.me/380630455106",
+    link: "https:",
     image: {
       src: "/images/svg/whatsapp.svg",
       alt: "Whatsapp",
     },
   },
   {
-    link: "https://t.me/MishaBaydakov",
+    link: "https:",
     image: {
       src: "/images/svg/telegram.svg",
       alt: "Telegram",
@@ -26,7 +26,7 @@ const linksList = [
 
 <template>
   <div class="flex flex-col gap-6">
-    <h3 class="font-onest text-2xl font-bold uppercase text-white">
+    <h3 class="font-vinnytsia text-2xl font-bold uppercase text-white">
       {{ $t("contac_us_section.links.title") }}
     </h3>
 

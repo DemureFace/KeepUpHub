@@ -40,7 +40,7 @@ const currentOpenIndex = ref(0);
     <div class="container">
       <h2
         v-text="$t('feedback_section.title')"
-        class="mb-[30px] font-onest text-[26px] font-bold leading-8 text-white"
+        class="font-vinnytsia mb-[30px] text-[26px] font-bold leading-8 text-white"
       />
 
       <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">

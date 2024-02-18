@@ -1,7 +1,7 @@
 <script setup>
 const data = [
   {
-    title: "Contact center",
+    title: "services_info_section.contact_center.title",
     image: {
       src: "/images/svg/headephones.svg",
       alt: "headephones",
@@ -9,149 +9,152 @@ const data = [
     options: [
       {
         number: "01",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.contact_center.subtitle_first",
         description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+          first: "services_info_section.contact_center.description_first.first",
+          second:
+            "services_info_section.contact_center.description_first.second",
+          third: "services_info_section.contact_center.description_first.third",
         },
       },
       {
         number: "02",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.contact_center.subtitle_second",
         description: {
           first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+            "services_info_section.contact_center.description_second.first",
+          second:
+            "services_info_section.contact_center.description_second.second",
+          third:
+            "services_info_section.contact_center.description_second.third",
         },
       },
       {
         number: "03",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.contact_center.subtitle_third",
         description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+          first: "services_info_section.contact_center.description_third.first",
+          second:
+            "services_info_section.contact_center.description_third.second",
+          third: "services_info_section.contact_center.description_third.third",
         },
       },
     ],
   },
   {
-    title: "Contact center",
+    title: "services_info_section.support.title",
     image: {
       src: "/images/svg/mail-icon.svg",
-      alt: "headephones",
+      alt: "mail-icon",
     },
     options: [
       {
         number: "01",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.support.subtitle_first",
         description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+          first: "services_info_section.support.description_first.first",
+          second: "services_info_section.support.description_first.second",
+          third: "services_info_section.support.description_first.third",
         },
       },
       {
         number: "02",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.support.subtitle_second",
         description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+          first: "services_info_section.support.description_second.first",
+          second: "services_info_section.support.description_second.second",
+          third: "services_info_section.support.description_second.third",
         },
       },
       {
         number: "03",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.support.subtitle_third",
         description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+          first: "services_info_section.support.description_third.first",
+          second: "services_info_section.support.description_third.second",
+          third: "services_info_section.support.description_third.third",
         },
       },
     ],
   },
+
   {
-    title: "Contact center",
-    image: {
-      src: "/images/svg/coin-icon.svg",
-      alt: "headephones",
-    },
-    options: [
-      {
-        number: "01",
-        subtitle: "Збір інформації по новому продукту чи послузі",
-        description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
-        },
-      },
-      {
-        number: "02",
-        subtitle: "Збір інформації по новому продукту чи послузі",
-        description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
-        },
-      },
-      {
-        number: "03",
-        subtitle: "Збір інформації по новому продукту чи послузі",
-        description: {
-          first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
-        },
-      },
-    ],
-  },
-  {
-    title: "Contact center",
+    title: "services_info_section.payment_and_anti.title",
     image: {
       src: "/images/svg/retention-icon.svg",
-      alt: "headephones",
+      alt: "retention",
     },
     options: [
       {
         number: "01",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.payment_and_anti.subtitle_first",
         description: {
           first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+            "services_info_section.payment_and_anti.description_first.first",
+          second:
+            "services_info_section.payment_and_anti.description_first.second",
+          third:
+            "services_info_section.payment_and_anti.description_first.third",
         },
       },
       {
         number: "02",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.payment_and_anti.subtitle_second",
         description: {
           first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+            "services_info_section.payment_and_anti.description_second.first",
+          second:
+            "services_info_section.payment_and_anti.description_second.second",
+          third:
+            "services_info_section.payment_and_anti.description_second.third",
         },
       },
       {
         number: "03",
-        subtitle: "Збір інформації по новому продукту чи послузі",
+        subtitle: "services_info_section.payment_and_anti.subtitle_third",
         description: {
           first:
-            "Надаємо послуги зібрання детальної інформації  від користувачів щодо нових продуктів чи послуг,  допомагаючи бізнесу ",
-          second: "зрозуміти реакцію аудиторії",
-          third: "та вдосконалити свою пропозицію.",
+            "services_info_section.payment_and_anti.description_third.first",
+          second:
+            "services_info_section.payment_and_anti.description_third.second",
+          third:
+            "services_info_section.payment_and_anti.description_third.third",
+        },
+      },
+    ],
+  },
+  {
+    title: "services_info_section.retention.title",
+    image: {
+      src: "/images/svg/coin-icon.svg",
+      alt: "coin-icon",
+    },
+    options: [
+      {
+        number: "01",
+        subtitle: "services_info_section.retention.subtitle_first",
+        description: {
+          first: "services_info_section.retention.description_first.first",
+          second: "services_info_section.retention.description_first.second",
+          third: "services_info_section.retention.description_first.third",
+        },
+      },
+      {
+        number: "02",
+        subtitle: "services_info_section.retention.subtitle_second",
+        description: {
+          first: "services_info_section.retention.description_second.first",
+          second: "services_info_section.retention.description_second.second",
+          third: "services_info_section.retention.description_second.third",
+        },
+      },
+      {
+        number: "03",
+        subtitle: "services_info_section.retention.subtitle_third",
+        description: {
+          first: "services_info_section.retention.description_third.first",
+          second: "services_info_section.retention.description_third.second",
+          third: "services_info_section.retention.description_third.third",
         },
       },
     ],
@@ -171,8 +174,8 @@ const data = [
           />
 
           <h3
-            v-text="item.title"
-            class="font-onest text-2xl font-bold text-white"
+            v-text="$t(item.title)"
+            class="font-vinnytsia text-2xl font-bold uppercase text-white"
           />
         </div>
 
@@ -184,22 +187,25 @@ const data = [
           >
             <div class="flex justify-between gap-8 md:hidden">
               <span
-                class="text-stroke min-w-[46px] max-w-[46px] font-onest text-4xl font-bold"
                 v-text="option.number"
+                class="text-stroke min-w-[46px] max-w-[46px] font-onest text-4xl font-bold"
               />
 
               <div class="flex flex-col gap-3">
                 <h4
-                  class="font-onest text-2xl font-bold text-white"
-                  v-text="option.subtitle"
+                  class="font-vinnytsia text-2xl font-bold uppercase text-white"
+                  v-text="$t(option.subtitle)"
                 />
 
                 <p class="text-sm font-light text-white">
-                  {{ option.description.first }}
-                  <span class="font-bold text-primary-100">{{
-                    option.description.second
-                  }}</span>
-                  {{ option.description.third }}
+                  <span v-text="$t(option.description.first)" />
+                  <span>&nbsp;</span>
+                  <span
+                    class="font-bold text-primary-100"
+                    v-text="$t(option.description.second)"
+                  />
+                  <span>&nbsp;</span>
+                  <span v-text="$t(option.description.third)" />
                 </p>
               </div>
             </div>
@@ -211,19 +217,22 @@ const data = [
               />
 
               <h4
-                class="max-w-[297px] font-onest text-2xl font-bold text-white lg:max-w-[387px] xl:max-w-[424px]"
-                v-text="option.subtitle"
+                class="max-w-[297px] font-vinnytsia text-2xl font-bold text-white lg:max-w-[387px] xl:max-w-[424px]"
+                v-text="$t(option.subtitle)"
               />
             </div>
 
             <p
               class="hidden max-w-[297px] text-sm font-light text-white md:block lg:max-w-[387px] xl:max-w-[424px]"
             >
-              {{ option.description.first }}
-              <span class="font-bold text-primary-100">{{
-                option.description.second
-              }}</span>
-              {{ option.description.third }}
+              <span v-text="$t(option.description.first)" />
+              <span>&nbsp;</span>
+              <span
+                class="font-bold text-primary-100"
+                v-text="$t(option.description.second)"
+              />
+              <span>&nbsp;</span>
+              <span v-text="$t(option.description.third)" />
             </p>
           </div>
         </div>
@@ -231,7 +240,9 @@ const data = [
         <div
           class="box-content w-full md:ml-auto md:max-w-[297px] lg:max-w-[387px] xl:max-w-[424px] xl:px-[90px]"
         >
-          <BaseButton widthClass="w-full md:w-fit">Замовити послуги</BaseButton>
+          <BaseButton widthClass="w-full md:w-fit">{{
+            $t("services_info_section.contact_center.button_text")
+          }}</BaseButton>
         </div>
       </li>
     </ul>

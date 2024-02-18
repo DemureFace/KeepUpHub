@@ -18,7 +18,7 @@ const {
     <div class="container">
       <h2
         v-text="$t('calculator_section.title')"
-        class="mb-4 font-onest text-4xl font-bold uppercase text-white"
+        class="mb-4 font-vinnytsia text-4xl font-bold uppercase text-white"
       />
 
       <p class="mb-8 font-onest text-sm font-light text-white">
@@ -30,7 +30,7 @@ const {
 
       <h3
         v-text="$t('calculator_section.type')"
-        class="mb-3 font-onest text-2xl font-bold text-white"
+        class="mb-3 font-vinnytsia text-2xl font-bold text-white"
       />
     </div>
 
@@ -73,19 +73,19 @@ const {
 
         <div class="flex flex-col gap-4">
           <div class="flex flex-col gap-2 md:flex-row md:gap-4">
-            <h4 class="font-onest text-2xl font-bold text-white">
+            <h4 class="font-vinnytsia text-2xl font-bold text-white">
               {{ $t("calculator_section.ranges.total") }}
             </h4>
 
             <span
-              class="bg-gradient-to-r from-primary-200 to-primary-100 bg-clip-text font-onest text-[32px] font-bold leading-9 text-transparent"
+              class="bg-gradient-to-r from-primary-200 to-primary-100 bg-clip-text font-vinnytsia text-[32px] font-bold leading-9 text-transparent"
             >
-              {{ totalCost }}
+              {{ totalCost }}$
             </span>
           </div>
 
           <BaseButton widthClass="w-full md:w-fit" class="lg:ml-auto">
-            Замовити послуги
+            {{ $t("calculator_section.button_text") }}
           </BaseButton>
         </div>
       </div>
