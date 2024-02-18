@@ -199,12 +199,10 @@ const data = [
 
                 <p class="text-sm font-light text-white">
                   <span v-text="$t(option.description.first)" />
-                  <span>&nbsp;</span>
                   <span
                     class="font-bold text-primary-100"
                     v-text="$t(option.description.second)"
                   />
-                  <span>&nbsp;</span>
                   <span v-text="$t(option.description.third)" />
                 </p>
               </div>
@@ -226,12 +224,10 @@ const data = [
               class="hidden max-w-[297px] text-sm font-light text-white md:block lg:max-w-[387px] xl:max-w-[424px]"
             >
               <span v-text="$t(option.description.first)" />
-              <span>&nbsp;</span>
               <span
                 class="font-bold text-primary-100"
                 v-text="$t(option.description.second)"
               />
-              <span>&nbsp;</span>
               <span v-text="$t(option.description.third)" />
             </p>
           </div>

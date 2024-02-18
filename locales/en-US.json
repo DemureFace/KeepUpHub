@@ -3,7 +3,7 @@
     "welcome_to": "WELCOME TO",
     "keepuphub": "KEEPUPHUB!",
     "sub_title": "CONFIDENCE IN EVERY WORD, EFFICIENCY IN EVERY ACTION.",
-    "description": "is your trusted partner in building strong connections and ​achieving success through effective communication strategies. Every ​contact with us is another step towards your success!",
+    "description": " is your trusted partner in building strong connections and ​achieving success through effective communication strategies. Every ​contact with us is another step towards your success!",
     "partner": "KeepUpHub",
     "button_text": "SERVICES"
   },
@@ -38,22 +38,22 @@
       "button_text": "Order service",
       "subtitle_first": "GATHERING INFORMATION ​ON NEW PRODUCTS OR ​SERVICES",
       "description_first": {
-        "first": "We provide services to",
-        "second": "collect detailed information",
+        "first": "We provide services to ",
+        "second": "collect detailed information ",
         "third": "from users regarding new ​products or services, helping businesses understand audience reactions and ​improve their offerings."
       },
 
       "subtitle_second": "MAINTAINING INTEREST OF ​EXISTING CLIENTS",
       "description_second": {
-        "first": "We develop strategies to",
-        "second": "increase the average check",
+        "first": "We develop strategies to ",
+        "second": "increase the average check ",
         "third": "and customer lifetime value, ​aimed at retaining and supporting the activity of your business clients."
       },
 
       "subtitle_third": "COST-EFFECTIVENESS OF ​CUSTOMER ACQUISITION",
       "description_third": {
-        "first": "Calls to",
-        "second": "rekindle interest",
+        "first": "Calls to ",
+        "second": "rekindle interest ",
         "third": "are not just an attempt to save a customer. It's an ​effective way to preserve your own expenses on acquiring new clients."
       }
     },
@@ -62,21 +62,21 @@
 
       "subtitle_first": "24/7 ACCESSIBILITY",
       "description_first": {
-        "first": "Our global approach ensures synchronization with time zones,",
-        "second": "providing the best support",
+        "first": "Our global approach ensures synchronization with time zones, ",
+        "second": "providing the best support ",
         "third": "for your clients at their convenience."
       },
 
       "subtitle_second": "PROFESSIONAL ONLINE ​SUPPORT",
       "description_second": {
-        "first": "Quick resolution of technical issues,",
+        "first": "Quick resolution of technical issues, ",
         "second": "consultations on products or services",
         "third": ", efficient exchange of information with your clients ​through convenient online chat or email. Your clients receive personalized offers and recommendations during the communication ​process."
       },
 
       "subtitle_third": "ANALYSIS AND FEEDBACK",
       "description_third": {
-        "first": "We analyze chat data,",
+        "first": "We analyze chat data, ",
         "second": "identify weaknesses in customer interaction",
         "third": ", and develop strategies to improve them. We gather feedback ​to optimize products and services."
       }
@@ -87,21 +87,21 @@
 
       "subtitle_first": "24/7 ACCESSIBILITY",
       "description_first": {
-        "first": "Our team of experts provides",
-        "second": "round-the-clock support",
+        "first": "Our team of experts provides ",
+        "second": "round-the-clock support ",
         "third": "for all inquiries related to payment operations."
       },
 
       "subtitle_second": "SOLUTIONS FOR ANY ​BUSINESS",
       "description_second": {
-        "first": "Quick and effective",
-        "second": "resolution of all payment-related",
+        "first": "Quick and effective ",
+        "second": "resolution of all payment-related ",
         "third": "issues for the maximum convenience of your business."
       },
 
       "subtitle_third": "ENHANCING SECURITY",
       "description_third": {
-        "first": "Improvement and optimization",
+        "first": "Improvement and optimization ",
         "second": "of security level enhancement",
         "third": ". Systematic analysis of payment processes aimed at their ​optimization and efficiency improvement."
       }
@@ -111,22 +111,22 @@
 
       "subtitle_first": "MULTICHANNEL APPROACH",
       "description_first": {
-        "first": "Communication through email, SMS, and other channels allows for diverse campaigns and deep interaction with various audience ​segments.",
-        "second": "Expanding communication channels",
+        "first": "Communication through email, SMS, and other channels allows for diverse campaigns and deep interaction with various audience ​segments. ",
+        "second": "Expanding communication channels ",
         "third": "increases potential touchpoints with the customer, positively impacting conversions ​and sales volumes."
       },
 
       "subtitle_second": "MULTIMEDIA CAMPAIGNS",
       "description_second": {
-        "first": "Utilizing multimedia formats creates",
-        "second": "emotionally rich campaigns",
+        "first": "Utilizing multimedia formats creates ",
+        "second": "emotionally rich campaigns ",
         "third": "that are more memorable. Personalized offers enhance interaction ​and interest from clients."
       },
 
       "subtitle_third": "REAL-TIME ​ENGAGEMENT",
       "description_third": {
-        "first": "We respond to changes, creating timely and fresh campaigns that meet the audience's needs at any given moment.",
-        "second": "Instant ​adaptation to the situation",
+        "first": "We respond to changes, creating timely and fresh campaigns that meet the audience's needs at any given moment. ",
+        "second": "Instant ​adaptation to the situation ",
         "third": "helps offer timely solutions or promotions that enhance customer retention."
       }
     }
