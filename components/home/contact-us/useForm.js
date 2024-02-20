@@ -33,6 +33,7 @@ export function useForm() {
       name: "email",
       type: "email",
       placeholder: "contac_us_section.form.inputs.email",
+      isRequired: true,
     },
     {
       id: "comment",
