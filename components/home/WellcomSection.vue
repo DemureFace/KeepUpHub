@@ -14,12 +14,6 @@ const tickerText = [
 
 <template>
   <section class="relative">
-    <img
-      src="/images/background/1.jpg"
-      alt="Background"
-      class="absolute right-0 top-0"
-    />
-
     <div class="container relative">
       <div class="md:w-[363px] lg:w-[434px] xl:w-full">
         <h1 class="mb-1 font-vinnytsia text-5xl font-bold uppercase text-white">
