@@ -14,7 +14,7 @@ const {
 </script>
 
 <template>
-  <section>
+  <section id="calculator">
     <div class="container">
       <h2
         v-text="$t('calculator_section.title')"

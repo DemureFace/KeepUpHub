@@ -186,43 +186,43 @@
       "cost": "Estimated cost in USD:",
       "total": "Total cost:",
       "customer-base": {
-        "title": "Volume of client base per month:",
+        "title": "Number of calls per month:",
         "options": {
-          "first": "up to 500",
-          "second": "501 - 1000",
-          "third": "1001 - 5000",
-          "fourth": "5001 - 10000",
-          "fifth": "10 001+"
+          "first": "up to 2500",
+          "second": "5000",
+          "third": "10000",
+          "fourth": "25000",
+          "fifth": "50000"
         }
       },
       "support": {
         "title": "Number of requests per month:",
         "options": {
-          "first": "up to 500",
-          "second": "501 - 1000",
-          "third": "1001 - 5000",
-          "fourth": "5001 - 10000",
-          "fifth": "10 001+"
+          "first": "up to 2500",
+          "second": "5000",
+          "third": "10000",
+          "fourth": "25000",
+          "fifth": "50000"
         }
       },
       "payment": {
         "title": "The number of transactions per month:",
         "options": {
-          "first": "up to 500",
-          "second": "501 - 1000",
-          "third": "1001 - 5000",
-          "fourth": "5001 - 10000",
-          "fifth": "10 001+"
+          "first": "up to 2500",
+          "second": "5000",
+          "third": "10000",
+          "fourth": "25000",
+          "fifth": "50000"
         }
       },
       "retention": {
-        "title": "Number of requests per month:",
+        "title": "Volume of client base per month:",
         "options": {
-          "first": "up to 500",
-          "second": "501 - 1000",
-          "third": "1001 - 5000",
-          "fourth": "5001 - 10000",
-          "fifth": "10 001+"
+          "first": "up to 2500",
+          "second": "5000",
+          "third": "10000",
+          "fourth": "25000",
+          "fifth": "50000"
         }
       },
       "period": {

@@ -23,22 +23,22 @@ export function useCalculator() {
     {
       label: "calculator_section.ranges.customer-base.options.second",
       value: 2,
-      price: 5000,
+      price: 4250,
     },
     {
       label: "calculator_section.ranges.customer-base.options.third",
       value: 3,
-      price: 10000,
+      price: 8000,
     },
     {
       label: "calculator_section.ranges.customer-base.options.fourth",
       value: 4,
-      price: 25000,
+      price: 20000,
     },
     {
       label: "calculator_section.ranges.customer-base.options.fifth",
       value: 5,
-      price: 50000,
+      price: 38500,
     },
   ];
 
@@ -48,27 +48,27 @@ export function useCalculator() {
     {
       label: "calculator_section.ranges.support.options.first",
       value: 1,
-      price: 2500,
+      price: 3000,
     },
     {
       label: "calculator_section.ranges.support.options.second",
       value: 2,
-      price: 5000,
+      price: 12500,
     },
     {
       label: "calculator_section.ranges.support.options.third",
       value: 3,
-      price: 10000,
+      price: 23000,
     },
     {
       label: "calculator_section.ranges.support.options.fourth",
       value: 4,
-      price: 25000,
+      price: 55000,
     },
     {
       label: "calculator_section.ranges.support.options.fifth",
       value: 5,
-      price: 50000,
+      price: 100000,
     },
   ];
 
@@ -78,27 +78,27 @@ export function useCalculator() {
     {
       label: "calculator_section.ranges.payment.options.first",
       value: 1,
-      price: 2500,
+      price: 3000,
     },
     {
       label: "calculator_section.ranges.payment.options.second",
       value: 2,
-      price: 5000,
+      price: 12500,
     },
     {
       label: "calculator_section.ranges.payment.options.third",
       value: 3,
-      price: 10000,
+      price: 23000,
     },
     {
       label: "calculator_section.ranges.payment.options.fourth",
       value: 4,
-      price: 25000,
+      price: 55000,
     },
     {
       label: "calculator_section.ranges.payment.options.fifth",
       value: 5,
-      price: 50000,
+      price: 100000,
     },
   ];
 
@@ -108,27 +108,27 @@ export function useCalculator() {
     {
       label: "calculator_section.ranges.retention.options.first",
       value: 1,
-      price: 2500,
+      price: 5000,
     },
     {
       label: "calculator_section.ranges.retention.options.second",
       value: 2,
-      price: 5000,
+      price: 9500,
     },
     {
       label: "calculator_section.ranges.retention.options.third",
       value: 3,
-      price: 10000,
+      price: 17500,
     },
     {
       label: "calculator_section.ranges.retention.options.fourth",
       value: 4,
-      price: 25000,
+      price: 40000,
     },
     {
       label: "calculator_section.ranges.retention.options.fifth",
       value: 5,
-      price: 50000,
+      price: 75000,
     },
   ];
 
@@ -138,22 +138,27 @@ export function useCalculator() {
     {
       label: "1 місяць",
       value: 1,
+      coefficient: 1,
     },
     {
       label: "6",
       value: 2,
+      coefficient: 6,
     },
     {
       label: "12",
       value: 3,
+      coefficient: 12,
     },
     {
       label: "24",
       value: 4,
+      coefficient: 24,
     },
     {
       label: "36 місяців",
       value: 5,
+      coefficient: 36,
     },
   ];
 
@@ -189,6 +194,10 @@ export function useCalculator() {
   ]);
 
   const totalCost = computed(() => {
+    const periodCoefficient = monthRangeList.find(
+      ({ value }) => value === monthValue.value,
+    ).coefficient;
+
     return checkedServices.value.reduce((totalPrice, service) => {
       const range = rangesList.value.find(({ id }) => service === id);
 
@@ -197,7 +206,7 @@ export function useCalculator() {
           range.rangeValues.find(({ value }) => value === range.modelValue) ||
           {};
 
-        totalPrice += price * monthValue.value;
+        totalPrice += price * periodCoefficient;
       }
 
       return totalPrice;

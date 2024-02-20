@@ -1,6 +1,7 @@
 <script setup>
 const data = [
   {
+    id: "contact-center",
     title: "services_info_section.contact_center.title",
     image: {
       src: "/images/svg/headephones.svg",
@@ -42,6 +43,7 @@ const data = [
     ],
   },
   {
+    id: "support",
     title: "services_info_section.support.title",
     image: {
       src: "/images/svg/mail-icon.svg",
@@ -77,8 +79,8 @@ const data = [
       },
     ],
   },
-
   {
+    id: "payment-and-anti",
     title: "services_info_section.payment_and_anti.title",
     image: {
       src: "/images/svg/retention-icon.svg",
@@ -124,6 +126,7 @@ const data = [
     ],
   },
   {
+    id: "retention",
     title: "services_info_section.retention.title",
     image: {
       src: "/images/svg/coin-icon.svg",
@@ -165,7 +168,12 @@ const data = [
 <template>
   <section class="container">
     <ul class="flex flex-col gap-[100px]">
-      <li v-for="item in data" :key="item.title" class="flex flex-col gap-8">
+      <li
+        v-for="item in data"
+        :key="item.title"
+        :id="item.id"
+        class="flex flex-col gap-8"
+      >
         <div class="flex items-center gap-8">
           <img
             class="h-14 w-14 object-cover"
@@ -181,9 +189,9 @@ const data = [
 
         <div class="flex flex-col gap-8 xl:px-[90px]">
           <div
-            class="flex w-full flex-col justify-between gap-3 md:flex-row md:gap-8"
             v-for="option in item.options"
             :key="option.number"
+            class="flex w-full flex-col justify-between gap-3 md:flex-row md:gap-8"
           >
             <div class="flex justify-between gap-8 md:hidden">
               <span
@@ -199,10 +207,12 @@ const data = [
 
                 <p class="text-sm font-light text-white">
                   <span v-text="$t(option.description.first)" />
+
                   <span
                     class="font-bold text-primary-100"
                     v-text="$t(option.description.second)"
                   />
+
                   <span v-text="$t(option.description.third)" />
                 </p>
               </div>
@@ -236,9 +246,9 @@ const data = [
         <div
           class="box-content w-full md:ml-auto md:max-w-[297px] lg:max-w-[387px] xl:max-w-[424px] xl:px-[90px]"
         >
-          <BaseButton widthClass="w-full md:w-fit">{{
-            $t("services_info_section.contact_center.button_text")
-          }}</BaseButton>
+          <BaseButton widthClass="w-full md:w-fit">
+            {{ $t("services_info_section.contact_center.button_text") }}
+          </BaseButton>
         </div>
       </li>
     </ul>

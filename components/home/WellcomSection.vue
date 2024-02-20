@@ -1,4 +1,8 @@
 <script setup>
+import { useScrollToTop } from "~/composables/useScrollToTop";
+
+const { scrollToTop } = useScrollToTop();
+
 const tickerText = [
   "contact center",
   "SUPPORT",
@@ -10,13 +14,19 @@ const tickerText = [
 
 <template>
   <section class="relative">
+    <img
+      src="/images/background/1.jpg"
+      alt="Background"
+      class="absolute right-0 top-0"
+    />
+
     <div class="container relative">
       <div class="md:w-[363px] lg:w-[434px] xl:w-full">
         <h1 class="mb-1 font-vinnytsia text-5xl font-bold uppercase text-white">
           {{ $t("welcome_section.welcome_to") }}
-          <span class="text-primary-100">{{
-            $t("welcome_section.keepuphub")
-          }}</span>
+          <span class="text-primary-100">
+            {{ $t("welcome_section.keepuphub") }}
+          </span>
         </h1>
 
         <p class="mb-9 text-base font-bold text-white">
@@ -29,9 +39,12 @@ const tickerText = [
           >{{ $t("welcome_section.description") }}
         </p>
 
-        <BaseButton widthClass="w-full md:w-fit">{{
-          $t("welcome_section.button_text")
-        }}</BaseButton>
+        <BaseButton
+          widthClass="w-full md:w-fit"
+          @click="scrollToTop('calculator')"
+        >
+          {{ $t("welcome_section.button_text") }}
+        </BaseButton>
       </div>
 
       <img

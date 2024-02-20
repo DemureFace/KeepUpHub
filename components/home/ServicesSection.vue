@@ -1,21 +1,29 @@
 <script setup>
+import { useScrollToTop } from "~/composables/useScrollToTop";
+
+const { scrollToTop } = useScrollToTop();
+
 const serviceCards = [
   {
+    id: "contact-center",
     img: "/images/svg/headephones.svg",
     title: "services_section.contact_center.title",
     description: "services_section.contact_center.description",
   },
   {
+    id: "support",
     img: "/images/svg/mail-icon.svg",
     title: "services_section.support.title",
     description: "services_section.support.description",
   },
   {
+    id: "payment-and-anti",
     img: "/images/svg/coin-icon.svg",
     title: "services_section.payment_and_anti-fraud.title",
     description: "services_section.payment_and_anti-fraud.description",
   },
   {
+    id: "retention",
     img: "/images/svg/retention-icon.svg",
     title: "services_section.retention.title",
     description: "services_section.retention.description",
@@ -45,7 +53,7 @@ const serviceCards = [
 
         <h3
           v-text="$t(card.title)"
-          class="font-vinnytsia text-center text-2xl font-bold text-white"
+          class="text-center font-vinnytsia text-2xl font-bold text-white"
         />
 
         <p
@@ -58,6 +66,7 @@ const serviceCards = [
           iconRotate="rotate-90"
           aria-label="Service"
           class="mt-auto"
+          @click="scrollToTop(card.id)"
         />
       </li>
 
