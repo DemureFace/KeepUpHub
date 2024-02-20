@@ -118,7 +118,7 @@ export function useForm() {
       ),
       minLength: minLength(5),
     },
-    email: {},
+    email: { required, email },
     comment: {},
     time: {},
     request: {},
