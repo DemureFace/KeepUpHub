@@ -31,6 +31,7 @@ module.exports = {
         lg: "960px",
         xl: "1248px",
         "2xl": "1632px",
+        "3xl": "1920px",
         "can-hover": { raw: "(hover: hover) and (pointer: fine)" },
       },
 

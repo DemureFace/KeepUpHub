@@ -32,7 +32,12 @@ const serviceCards = [
 </script>
 
 <template>
-  <section class="w-full overflow-hidden">
+  <section class="relative w-full">
+    <img
+      src="/images/background/2.jpg"
+      alt="Background"
+      class="absolute left-[-1663px] top-[-128px] -z-20 h-[1199px] min-w-[919px] xl:left-[-663px] 2xl:left-[-471px]"
+    />
     <div class="container mb-14">
       <h2 class="font-vinnytsia text-2xl font-bold text-white md:text-4xl">
         {{ $t("services_section.title") }}

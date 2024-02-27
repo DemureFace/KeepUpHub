@@ -31,7 +31,17 @@ const choiceList = [
 </script>
 
 <template>
-  <section>
+  <section class="relative">
+    <img
+      src="/images/background/5.jpg"
+      alt="Background"
+      class="3xl:right-[-518px] absolute right-[-1663px] top-[-782px] -z-20 h-[1637px] min-w-[1192px] md:right-[-950px] lg:right-[-854px] xl:right-[-710px] 2xl:right-[-518px]"
+    />
+    <img
+      src="/images/background/6.jpg"
+      alt="Background"
+      class="absolute left-[-1663px] top-[56px] -z-20 h-[1389px] min-w-[1001px] 2xl:left-[-753px]"
+    />
     <div class="container mb-8">
       <h2
         v-text="$t('choice_section.title')"

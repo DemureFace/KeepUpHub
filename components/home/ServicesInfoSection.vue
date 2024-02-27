@@ -1,4 +1,8 @@
 <script setup>
+import { useScrollToTop } from "~/composables/useScrollToTop";
+
+const { scrollToTop } = useScrollToTop();
+
 const data = [
   {
     id: "contact-center",
@@ -166,7 +170,18 @@ const data = [
 </script>
 
 <template>
-  <section class="container">
+  <section class="container relative">
+    <img
+      src="/images/background/3.jpg"
+      alt="Background"
+      class="3xl:right-[-990px] absolute right-[-1663px] top-[-349px] -z-20 h-[1498px] min-w-[1065px] md:right-[-1000px] lg:right-[-904px] xl:right-[-760px] 2xl:right-[-842px]"
+    />
+    <img
+      src="/images/background/4.jpg"
+      alt="Background"
+      class="3xl:left-[-960px] absolute left-[-1663px] top-[644px] -z-20 h-[1359px] min-w-[1289px] lg:left-[-1021px] xl:left-[-877px] 2xl:left-[-816px]"
+    />
+
     <ul class="flex flex-col gap-[100px]">
       <li
         v-for="item in data"
@@ -246,7 +261,10 @@ const data = [
         <div
           class="box-content w-full md:ml-auto md:max-w-[297px] lg:max-w-[387px] xl:max-w-[424px] xl:px-[90px]"
         >
-          <BaseButton widthClass="w-full md:w-fit">
+          <BaseButton
+            widthClass="w-full md:w-fit "
+            @click="scrollToTop('calculator')"
+          >
             {{ $t("services_info_section.contact_center.button_text") }}
           </BaseButton>
         </div>
