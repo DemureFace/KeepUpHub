@@ -136,7 +136,7 @@ export function useCalculator() {
 
   const monthRangeList = [
     {
-      label: "1 місяць",
+      label: "1",
       value: 1,
       coefficient: 1,
     },
@@ -156,7 +156,7 @@ export function useCalculator() {
       coefficient: 24,
     },
     {
-      label: "36 місяців",
+      label: "36",
       value: 5,
       coefficient: 36,
     },
