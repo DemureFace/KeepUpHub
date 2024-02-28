@@ -5,13 +5,13 @@ const { scrollToTop } = useScrollToTop();
 
 const serviceCards = [
   {
-    id: "contact-center",
+    id: "contact-centerr",
     img: "/images/svg/headephones.svg",
     title: "services_section.contact_center.title",
     description: "services_section.contact_center.description",
   },
   {
-    id: "support",
+    id: "supportr",
     img: "/images/svg/mail-icon.svg",
     title: "services_section.support.title",
     description: "services_section.support.description",
@@ -23,7 +23,7 @@ const serviceCards = [
     description: "services_section.payment_and_anti-fraud.description",
   },
   {
-    id: "retention",
+    id: "retentionr",
     img: "/images/svg/retention-icon.svg",
     title: "services_section.retention.title",
     description: "services_section.retention.description",
