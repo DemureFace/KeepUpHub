@@ -28,7 +28,7 @@ const props = defineProps({
 
 const paddings = computed(() => {
   if (props.onlyIcon) {
-    return "p-[18.5px]";
+    return "p-[18.6px]";
   }
 
   return "py-3.5 pl-7 pr-6";
