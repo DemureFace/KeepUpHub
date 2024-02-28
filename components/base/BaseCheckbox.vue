@@ -44,7 +44,7 @@ const isChecked = computed(() => {
     :class="
       isChecked
         ? 'border-transparent bg-primary-gradient'
-        : 'can-hover:hover:border-white/50 border-white/30 bg-transparent'
+        : 'border-white/30 bg-transparent can-hover:hover:border-white/50'
     "
   >
     <span class="flex">
@@ -62,7 +62,7 @@ const isChecked = computed(() => {
         :class="
           isChecked
             ? 'border-transparent'
-            : 'can-hover:group-hover:border-white/50 border-white/30'
+            : 'border-white/30 can-hover:group-hover:border-white/50'
         "
       >
         <img

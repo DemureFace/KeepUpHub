@@ -97,7 +97,7 @@ export function useForm() {
         },
       ],
       shouldTranslate: true,
-      class: "z-0",
+      class: "z-[1]",
     },
   ]);
 

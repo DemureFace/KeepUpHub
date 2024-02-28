@@ -5,7 +5,7 @@ const { scrollToTop } = useScrollToTop();
 
 const data = [
   {
-    id: "contact-center",
+    id: "contact-centerr",
     title: "services_info_section.contact_center.title",
     image: {
       src: "/images/svg/headephones.svg",
@@ -47,7 +47,7 @@ const data = [
     ],
   },
   {
-    id: "support",
+    id: "supportr",
     title: "services_info_section.support.title",
     image: {
       src: "/images/svg/mail-icon.svg",
@@ -130,7 +130,7 @@ const data = [
     ],
   },
   {
-    id: "retention",
+    id: "retentionr",
     title: "services_info_section.retention.title",
     image: {
       src: "/images/svg/coin-icon.svg",
@@ -174,12 +174,12 @@ const data = [
     <img
       src="/images/background/3.jpg"
       alt="Background"
-      class="3xl:right-[-990px] absolute right-[-1663px] top-[-349px] -z-20 h-[1498px] min-w-[1065px] md:right-[-1000px] lg:right-[-904px] xl:right-[-760px] 2xl:right-[-842px]"
+      class="absolute right-[-1663px] top-[-349px] -z-20 h-[1498px] min-w-[1065px] md:right-[-1000px] lg:right-[-904px] xl:right-[-760px] 2xl:right-[-842px] 3xl:right-[-990px]"
     />
     <img
       src="/images/background/4.jpg"
       alt="Background"
-      class="3xl:left-[-960px] absolute left-[-1663px] top-[644px] -z-20 h-[1359px] min-w-[1289px] lg:left-[-1021px] xl:left-[-877px] 2xl:left-[-816px]"
+      class="absolute left-[-1663px] top-[644px] -z-20 h-[1359px] min-w-[1289px] lg:left-[-1021px] xl:left-[-877px] 2xl:left-[-816px] 3xl:left-[-960px]"
     />
 
     <ul class="flex flex-col gap-[100px]">
