@@ -4,7 +4,7 @@ import ContactUsLinks from "./ContactUsLinks.vue";
 </script>
 
 <template>
-  <section class="container relative">
+  <section class="container relative" id="form">
     <img
       src="/images/background/7.jpg"
       alt="Background"

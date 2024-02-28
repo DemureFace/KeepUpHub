@@ -89,7 +89,7 @@ const {
           <BaseButton
             widthClass="w-full md:w-fit"
             class="lg:ml-auto"
-            @click="scrollToTop('calculator')"
+            @click="scrollToTop('form')"
           >
             {{ $t("calculator_section.button_text") }}
           </BaseButton>
