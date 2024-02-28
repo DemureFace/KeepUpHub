@@ -1,7 +1,9 @@
 <script setup>
 import CalculatorRange from "./CalculatorRange.vue";
-
 import { useCalculator } from "./useCalculator";
+import { useScrollToTop } from "~/composables/useScrollToTop";
+
+const { scrollToTop } = useScrollToTop();
 
 const {
   serviceList,
@@ -84,7 +86,11 @@ const {
             </span>
           </div>
 
-          <BaseButton widthClass="w-full md:w-fit" class="lg:ml-auto">
+          <BaseButton
+            widthClass="w-full md:w-fit"
+            class="lg:ml-auto"
+            @click="scrollToTop('calculator')"
+          >
             {{ $t("calculator_section.button_text") }}
           </BaseButton>
         </div>

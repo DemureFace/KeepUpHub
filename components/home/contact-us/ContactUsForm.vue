@@ -1,8 +1,5 @@
 <script setup>
 import { useVuelidate } from "@vuelidate/core";
-import { useScrollToTop } from "~/composables/useScrollToTop";
-
-const { scrollToTop } = useScrollToTop();
 
 const { t } = useI18n();
 
@@ -103,7 +100,6 @@ function setFieldPosition(name) {
       type="submit"
       widthClass="w-full md:w-fit"
       :is-loading="isFormSending"
-      @click="scrollToTop('calculator')"
     >
       {{ $t("contac_us_section.form.button_text") }}
     </BaseButton>
