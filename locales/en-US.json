@@ -3,7 +3,7 @@
     "welcome_to": "WELCOME TO",
     "keepuphub": "KEEPUPHUB!",
     "sub_title": "CONFIDENCE IN EVERY WORD, EFFICIENCY IN EVERY ACTION.",
-    "description": " is your trusted partner in building strong connections and ​achieving success through effective communication strategies. Every ​contact with us is another step towards your success!",
+    "description": " is here to help you build strong connections and succeed through effective communication strategies. Each time you connect with us, you are moving forward on the path to success!",
     "partner": "KeepUpHub",
     "button_text": "SERVICES"
   },
@@ -13,22 +13,22 @@
 
     "contact_center": {
       "title": "Contact Center",
-      "description": "Ensuring high-quality customer ​interactions through competent call ​management."
+      "description": "Ensuring high-quality customer ​interactions through skilled call ​management."
     },
 
     "support": {
       "title": "Support",
-      "description": "Professional online support. Conducting ​chats and online communication with ​customers. Fast and effective issue ​resolution in real-time."
+      "description": "Professionally addressing customer issues through chats and virtual communication in real-time."
     },
 
     "payment_and_anti-fraud": {
       "title": "Payment & Anti-Fraud",
-      "description": "Developing and implementing effective ​strategies to optimize payment ​processes in your business."
+      "description": "Creating and putting into action  effective ​strategies to optimize payment processes in your business."
     },
 
     "retention": {
       "title": "Retention",
-      "description": "Increasing loyalty and retaining ​customers through effective email ​management, SMS campaigns, and ​promotional activities."
+      "description": "Keep customers engaged and loyal over time through forceful email ​management, SMS campaigns, and ​promotional activities."
     }
   },
 
@@ -45,9 +45,9 @@
 
       "subtitle_second": "MAINTAINING INTEREST OF ​EXISTING CLIENTS",
       "description_second": {
-        "first": "We develop strategies to ",
+        "first": "We create strategies to ",
         "second": "increase the average check ",
-        "third": "and customer lifetime value, ​aimed at retaining and supporting the activity of your business clients."
+        "third": "and customer lifetime value, ​aimed at retaining and supporting the activity of your clients."
       },
 
       "subtitle_third": "COST-EFFECTIVENESS OF ​CUSTOMER ACQUISITION",
@@ -62,8 +62,8 @@
 
       "subtitle_first": "24/7 ACCESSIBILITY",
       "description_first": {
-        "first": "Our global approach ensures synchronization with time zones, ",
-        "second": "providing the best support ",
+        "first": "Synchronizing with time zones to provide ",
+        "second": "the fastest support ",
         "third": "for your clients at their convenience."
       },
 
@@ -71,7 +71,7 @@
       "description_second": {
         "first": "Quick resolution of technical issues, ",
         "second": "consultations on products or services",
-        "third": ", efficient exchange of information with your clients ​through convenient online chat or email. Your clients receive personalized offers and recommendations during the communication ​process."
+        "third": "through convenient online chat or email. Your clients get a personalized approach."
       },
 
       "subtitle_third": "ANALYSIS AND FEEDBACK",
@@ -111,23 +111,23 @@
 
       "subtitle_first": "MULTICHANNEL APPROACH",
       "description_first": {
-        "first": "Communication through email, SMS, and other channels allows for diverse campaigns and deep interaction with various audience ​segments. ",
-        "second": "Expanding communication channels ",
-        "third": "increases potential touchpoints with the customer, positively impacting conversions ​and sales volumes."
+        "first": "Communication through email, SMS, and other channels brings deep interaction with various audience ​segments. ",
+        "second": "Adding more ways to communicate ",
+        "third": "with customers boosts opportunities to connect with them, which leads to more sales."
       },
 
       "subtitle_second": "MULTIMEDIA CAMPAIGNS",
       "description_second": {
-        "first": "Utilizing multimedia formats creates ",
-        "second": "emotionally rich campaigns ",
-        "third": "that are more memorable. Personalized offers enhance interaction ​and interest from clients."
+        "first": "Using multimedia formats makes ",
+        "second": "emotionally engaging campaigns that are more memorable. ",
+        "third": "Personalized offers enhance interaction ​and interest from customers."
       },
 
       "subtitle_third": "REAL-TIME ​ENGAGEMENT",
       "description_third": {
-        "first": "We respond to changes, creating timely and fresh campaigns that meet the audience's needs at any given moment. ",
-        "second": "Instant ​adaptation to the situation ",
-        "third": "helps offer timely solutions or promotions that enhance customer retention."
+        "first": "We adapt quickly to changes, crafting timely and innovate campaigns that cater to the actual customer's needs. ",
+        "second": "Our ability to swiftly adjust to the situation ",
+        "third": "enables us to provide timely solutions or promotions that boost customer retention."
       }
     }
   },
@@ -232,9 +232,9 @@
   },
 
   "contac_us_section": {
-    "title": "LEAVE YOUR CONTACT",
-    "sub_title": " and we will contact you",
-    "description": "Interested in the exact cost of the project? Fill out the form, we will calculate the cost and contact you to announce it",
+    "title": "LEAVE YOUR DETAILS",
+    "sub_title": " AND WE WILL CONTACT YOU",
+    "description": "Are you interested in the exact cost of the project? Fill out the form, we will make calculations and keep in touch with you",
     "form": {
       "inputs": {
         "name": "What is your name?",
@@ -276,19 +276,19 @@
 
     "questions": {
       "first": {
-        "question": "WHAT ARE THE ADVANTAGES OF A MULTICHANNEL APPROACH TO CUSTOMER ​INTERACTION?",
-        "answer": "Utilizing all available channels (email, SMS, etc.) ensures deep interaction and maximum audience coverage. This leads to increased potential touchpoints and positively impacts ​conversion and sales volumes."
+        "question": "WHAT IS OUR MULTICHANNEL APPROACH TO CUSTOMER ​INTERACTION?",
+        "answer": "Using of all possible channels: SMS, email, calls, messengers with special technical tools to make the communication not only effective, but organized as well."
       },
       "second": {
-        "question": "WHY IS IT IMPORTANT TO HAVE A CONTACT CENTER FOR INCREASING SALES?",
-        "answer": "The contact center allows for active interaction with potential and existing customers, addressing their inquiries, and contributes to increased sales through individualized ​approaches and personalized solutions."
+        "question": "WHY IS IT IMPORTANT TO HAVE A CALL CENTER FOR INCREASING SALES?",
+        "answer": "A lot of people just scroll promotional emails. Otherwise, calls help to build a strong connection with customer through more empathic and personalized communication."
       },
       "third": {
         "question": "HOW DOES YOUR TEAM ENSURE INFORMATION EXCHANGE SECURITY?",
         "answer": "We utilize advanced technologies and encryption systems to ensure confidentiality and security of information exchange. Access control and monitoring systems guarantee ​customer data security."
       },
       "fourth": {
-        "question": "WHY SHOULD WE TRUST KEEPUPHUB?",
+        "question": "WHY SHOULD YOU TRUST KEEPUPHUB?",
         "answer": "Our experience working with various businesses allows us to precisely understand how to ensure customer retention in different industries."
       },
       "fifth": {
